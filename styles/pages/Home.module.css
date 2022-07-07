@@ -19,6 +19,13 @@
   left: 0;
   right: 0;
 }
+.home_header__title {
+  color: #ffefe8;
+}
+.home_header__socials {
+  width: 4.5em;
+}
 .home__nav {
   width: 60%;
+  font-size: 2em;
 }/*# sourceMappingURL=home.module.css.map */

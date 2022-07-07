@@ -1,11 +1,13 @@
-import Link from 'next/link'
 import Nav from './Nav'
+import styles from '../../styles/components/Header.module.css'
 
 const Header = () => {
     return (
-        <header>
-            <h1>Yasmin Hana</h1>
-            <Nav />
+        <header className={styles.header}>
+            <h1 className={styles.header__title}>Yasmin Hana</h1>
+            <div className={styles.header__nav}>
+                <Nav />
+            </div>
         </header>
     )
 }
