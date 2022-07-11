@@ -1,0 +1,17 @@
+.about {
+  width: 60%;
+  display: grid;
+  gap: 2em;
+  padding-top: 3em;
+  margin: 0 auto;
+}
+.about_item {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.about_item_figure {
+  position: relative;
+}
+.about_item__body {
+  font-size: 1.2em;
+}/*# sourceMappingURL=About.module.css.map */

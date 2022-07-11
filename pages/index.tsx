@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import Socials from './components/Socials'
-import Nav from './components/Nav'
 import styles from '../styles/pages/Home.module.css'
 
 const Home: NextPage = () => {
@@ -12,9 +12,33 @@ const Home: NextPage = () => {
           <Socials />
         </div>
       </header>
-      <div className={styles.home__nav}>
-        <Nav />
-      </div>
+      <menu className={styles.home_nav}>
+            <li className={styles.home_nav_item}>
+                <Link href='/about'>
+                    <a className={styles.home_nav_item__text}>About</a>
+                </Link>
+            </li>
+            <li className={styles.home_nav_item}>
+                <Link href='/together'>
+                    <a className={styles.home_nav_item__text}>Our time together</a>
+                </Link>
+            </li>
+            <li className={styles.home_nav_item}>
+                <Link href='/rates'>
+                    <a className={styles.home_nav_item__text}>Rates</a>
+                </Link>
+            </li>
+            <li className={styles.home_nav_item}>
+                <Link href='/touch'>
+                    <a className={styles.home_nav_item__text}>Get in touch</a>
+                </Link>
+            </li>
+            <li className={styles.home_nav_item}>
+                <Link  href='/wishlist'>
+                    <a className={styles.home_nav_item__text}>Wishlist</a>
+                </Link>
+            </li>
+        </menu>
     </main>
   )
 }
