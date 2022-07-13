@@ -15,18 +15,18 @@ const Nav = () => {
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link href='/rates'>
-                    <a className={styles.nav_item__text}>Rates</a>
-                </Link>
-            </li>
-            <li className={styles.nav_item}>
                 <Link href='/touch'>
                     <a className={styles.nav_item__text}>Get in touch</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link  href='/wishlist'>
-                    <a className={styles.nav_item__text}>Wishlist</a>
+                <Link href='/faq'>
+                    <a className={styles.nav_item__text}>FAQ</a>
+                </Link>
+            </li>
+            <li className={styles.nav_item}>
+                <Link  href='/spoil-me'>
+                    <a className={styles.nav_item__text}>Spoil me</a>
                 </Link>
             </li>
         </menu>
