@@ -78,4 +78,15 @@ svg {
 .about {
   color: black;
   background-color: #ffefe8;
+}
+
+.container-one {
+  width: 100%;
+  background-color: white;
+}
+
+.container-two {
+  width: 60%;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
 }/*# sourceMappingURL=globals.css.map */

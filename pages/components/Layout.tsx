@@ -1,16 +1,18 @@
 import Header from './Header'
-// import Footer from './Footer'
-import { useContext } from 'react'
+import { useRouter } from 'next/router'
+// import { useContext } from 'react'
 // import AppContext from '../lib/context'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  const router = useRouter()
+  
 //   const value = useContext(AppContext)
 //   let { isNavVisible } = value.state
   return (
       <>
-          <Header />
-          {children}
-          {/* <Footer /> */}
+        {(router.pathname !== '/') && <Header />}
+        {children}
+        {/* <Footer /> */}
       </>
   )
 }

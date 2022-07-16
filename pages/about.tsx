@@ -4,12 +4,14 @@ import styles from '../styles/pages/About.module.css'
 const About = () => {
     return (
         <>
-            <section className={styles.about_title}>
-                <h1 className={styles.about_title__text}>
+            <section className={styles.subheader}>
+                <h1 className={styles.subheader__title}>
                     May I tempt you for a spell? 
                 </h1>
             </section>
             <main className={styles.about}>
+                <div className='container-one'>
+                <div className='container-two'>
                 <section className={styles.about_item}>
                     <figure className={styles.about_item_figure}>
                         <Image 
@@ -52,6 +54,8 @@ const About = () => {
                         The depth and variety  of human sexual expressions  does not easily shock me. Being entrusted  to create a safe space for lovers, to be a steady anchor in the sea of exploration is an honour and a privilege.  All desires, whether sweet and simple or dark and depraved, and all lovers from the more nervous novice or to the experienced adventurer, are worthy of care and attention. Nothing brings me more joy than to curate an experience where lovers can truly relax, release, revel in and receive the endless iterations of their erotic potential. Your secret is safe with me. 
                     </div>
                 </section>
+                </div>
+                </div>
             </main>
         </>
     )
