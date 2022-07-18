@@ -1,7 +1,7 @@
 .subheader {
   position: fixed;
   width: 100%;
-  height: 12em;
+  height: 25em;
   background-color: #ffefe8;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -18,15 +18,15 @@
 .about {
   display: grid;
   gap: 2em;
-  padding-top: 12em;
+  padding-top: 25em;
 }
-.about_item {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-}
-.about_item_figure {
-  position: relative;
-}
-.about_item__body {
+.about_text__para {
+  margin-bottom: 1.5em;
   font-size: 1.2em;
+  font-weight: 200;
+}
+.about_figure {
+  position: relative;
+  width: 100%;
+  height: 30em;
 }/*# sourceMappingURL=About.module.css.map */

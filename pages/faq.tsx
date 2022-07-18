@@ -1,22 +1,22 @@
-import styles from '../styles/pages/Spoil.module.css'
+import styles from '../styles/pages/Faq.module.css'
 
-const SpoilMe = () => {
+const Faq = () => {
     return (
         <>
             <section className={styles.subheader}>
                 <h1 className={styles.subheader__title}>
-                    Spoil me
+                    FAQ
                 </h1>
             </section>
-            <main className={styles.spoil}>
+            <main className={styles.faq}>
                 <div className='container-one'>
-                    <div className='container-two'>
+                <div className='container-two'>
 
-                    </div>
+                </div>
                 </div>
             </main>
         </>
     )
 }
 
-export default SpoilMe
+export default Faq

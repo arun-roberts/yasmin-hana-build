@@ -1,7 +1,7 @@
 .subheader {
   position: fixed;
   width: 100%;
-  height: 12em;
+  height: 25em;
   background-color: #ffefe8;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -12,37 +12,61 @@
   color: rgba(200, 30, 5, 0.8);
   z-index: -1;
   background-image: url("/assets/Yasmin5.jpg");
-  background-position: 0% 10%;
+  background-position: 0% 20%;
 }
 
 .together {
   width: 100%;
   display: grid;
-  padding-top: 12em;
+  padding-top: 25em;
   margin: 0 auto;
 }
 .together_item {
-  min-height: 22em;
+  min-height: 30em;
   display: flex;
   justify-content: space-between;
 }
 .together_item:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
+.together_item:nth-last-of-type(2n) * {
+  text-align: right;
+}
+.together_item:nth-of-type(2n) div {
+  align-items: flex-end;
+}
+.together_item:nth-of-type(4) {
+  height: 38em;
+}
 .together_item__image {
   position: relative;
   width: 50%;
   height: 100%;
-  max-height: 22em;
+  min-height: 30em;
 }
 .together_item_text {
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffefe8;
+  padding: 0.8em;
 }
 .together_item_text__title {
   text-transform: uppercase;
   font-weight: 200;
-  padding: 0.8em 0 0.8em;
+  margin-bottom: 0.8rem;
 }
-.together_item_text__price {
-  padding-bottom: 0.5em;
+.together_item_text_priceList {
+  margin-bottom: 0.8rem;
+}
+.together_item_text_priceList__time {
+  font-weight: 800;
+}
+.together_item_text_priceList__price {
+  font-weight: 500;
+}
+.together_item_text__body {
+  width: 80%;
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=Together.module.css.map */

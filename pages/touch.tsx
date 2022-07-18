@@ -8,6 +8,8 @@ const Touch = () => {
                 <h1 className={styles.subheader__title}>Get in touch</h1>
             </section>
             <main className={styles.touch}>
+                <div className='container-one'>
+                <div className='container-two'>
                 <h2 className={styles.touch__subtitle}>
                     Whether you already know what you’re looking for or if you have some questions, you can contact me and we’ll take it from there.
                 </h2>
@@ -39,6 +41,8 @@ const Touch = () => {
                         Hi Yasmin, <br/>My name is <span>*your name*</span>, I’m located at <span>*your location*</span>. I would like to organise a <span>*duration and kind of service*</span> session with you on <span>*preferred date*</span> at <span>*preferred time*</span>. <br/><span>*Any details/ specific requests/ interests / kinks / questions*</span>
                     </p>    
                 </section>
+                </div>
+                </div>
             </main>
         </>
     )

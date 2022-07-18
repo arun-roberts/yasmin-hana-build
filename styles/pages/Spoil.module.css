@@ -11,16 +11,13 @@
   padding-top: 3em;
   color: rgba(200, 30, 5, 0.8);
   z-index: -1;
-  background-image: url("/assets/Yasmin13.jpg");
-  background-position: 0% 35%;
+  background-image: url("/assets/Yasmin4.jpg");
+  background-position: 0% 20%;
 }
 
-.touch {
+.spoil {
+  width: 100%;
+  display: grid;
   padding-top: 25em;
   margin: 0 auto;
-}
-.touch__subtitle {
-  font-size: 1.4em;
-  text-transform: uppercase;
-  font-weight: 200;
-}/*# sourceMappingURL=Touch.module.css.map */
+}/*# sourceMappingURL=Spoil.module.css.map */
