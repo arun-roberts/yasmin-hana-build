@@ -81,8 +81,10 @@ svg {
 }
 
 .container-one {
+  position: relative;
   width: 100%;
-  background-color: white;
+  height: 100%;
+  bottom: 0;
   background-color: #ffefe8;
 }
 
