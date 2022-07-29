@@ -17,7 +17,35 @@
 
 .faq {
   width: 100%;
+  height: 100%;
   display: grid;
   padding-top: 25em;
   margin: 0 auto;
+}
+.faq_faqs {
+  display: grid;
+  gap: 1em;
+}
+.faq_faqs_item {
+  display: grid;
+  gap: 0.8em;
+}
+.faq_faqs_item__q {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.faq_faqs_item__a {
+  font-weight: 300;
+}
+.faq_faqs__aside {
+  font-weight: 300;
+  font-style: italic;
+}
+.faq_faqs__link {
+  color: inherit;
+  transition: color 150ms ease;
+}
+.faq_faqs__link:hover {
+  color: rgba(200, 30, 5, 0.8);
 }/*# sourceMappingURL=Faq.module.css.map */

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300500&display=swap')
+@use './variables' as *
 
 html,
 body 
@@ -24,7 +25,7 @@ a
 svg 
   width: 2em
   height: 2em
-  fill: #ffefe8
+  fill: $light-pink-text
 
 header 
   position: absolute
@@ -43,21 +44,19 @@ h1 span
 li 
   list-style: none
 
-
 a 
-  color: #ffefe8
+  color: $light-pink-text
   text-decoration: none
   text-transform: uppercase
 
 svg 
   width: 2em
   height: 2em
-  fill: #ffefe8
+  fill: $light-pink-text
 
 .title 
   display: flex
   align-items: center
-
 
 .icons 
   width: 5em
@@ -66,14 +65,14 @@ svg
 
 .about 
   color: black
-  background-color: #ffefe8
+  background-color: $light-pink-text
 
 .container-one
   position: relative
   width: 100%
   height: 100%
   bottom: 0
-  background-color: #ffefe8
+  background-color: $light-pink-text
 
 .container-two
   width: 48em

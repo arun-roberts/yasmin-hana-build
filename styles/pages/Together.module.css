@@ -36,7 +36,7 @@
   align-items: flex-end;
 }
 .together_item:nth-of-type(4) {
-  height: 38em;
+  height: 36em;
 }
 .together_item__image {
   position: relative;
@@ -64,9 +64,19 @@
   font-weight: 800;
 }
 .together_item_text_priceList__price {
-  font-weight: 500;
+  font-weight: 200;
 }
 .together_item_text__body {
   width: 80%;
+  font-weight: 200;
   margin-bottom: 0.8rem;
+}
+.together_aside {
+  display: grid;
+  gap: 0.8em;
+  margin-top: 1.5em;
+}
+.together_aside__item {
+  font-weight: 200;
+  font-style: italic;
 }/*# sourceMappingURL=Together.module.css.map */
