@@ -15,12 +15,12 @@ const Home: NextPage = () => {
       <menu className={styles.home_nav}>
             <li className={styles.home_nav_item}>
                 <Link href='/about'>
-                    <a className={styles.home_nav_item__text}>About</a>
+                    <a className={styles.home_nav_item__text}>About me</a>
                 </Link>
             </li>
             <li className={styles.home_nav_item}>
-                <Link href='/together'>
-                    <a className={styles.home_nav_item__text}>Our time together</a>
+                <Link href='/pleasure'>
+                    <a className={styles.home_nav_item__text}>Pleasure menu</a>
                 </Link>
             </li>
             <li className={styles.home_nav_item}>

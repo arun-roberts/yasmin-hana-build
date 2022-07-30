@@ -6,12 +6,12 @@ const Nav = () => {
         <menu className={styles.nav}>
             <li className={styles.nav_item}>
                 <Link href='/about'>
-                    <a className={styles.nav_item__text}>About</a>
+                    <a className={styles.nav_item__text}>About me</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link href='/together'>
-                    <a className={styles.nav_item__text}>Our time together</a>
+                <Link href='/pleasure'>
+                    <a className={styles.nav_item__text}>Pleasure menu</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
@@ -20,8 +20,8 @@ const Nav = () => {
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link href='/faq'>
-                    <a className={styles.nav_item__text}>FAQ</a>
+                <Link href='/faqs'>
+                    <a className={styles.nav_item__text}>FAQs</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
