@@ -1,24 +1,20 @@
 @use '../variables' as *
     
-.subheader
-    @include sub-header
-    background-image: url('/assets/Yasmin5.jpg')
-    background-position: 0% 0%
-
-    
 .together
     width: 100%
     display: grid
-    padding-top: $photo-height
+    gap: 1em
+    padding: 2em
     margin: 0 auto
 
     &_item
         min-height: 30em
         display: flex
+        flex-direction: row-reverse
         justify-content: space-between
     
         &:nth-of-type(2n)
-            flex-direction: row-reverse
+            flex-direction: row
 
         &:nth-last-of-type(2n) *
             text-align: right
@@ -30,14 +26,26 @@
             height: 36em
             
             
+        &_box
+            width: 49%
+            background-color: black
+            display: flex
+            justify-content: center
+            align-items: center
+
+            &__title
+                color: $light-pink-text
+                font-size: 2em
+                font-weight: 200
+
         &__image
             position: relative
-            width: 50%
+            width: 49%
             height: 100%
             min-height: 30em
 
         &_text
-            width: 50%
+            width: 49%
             display: flex
             flex-direction: column
             justify-content: center

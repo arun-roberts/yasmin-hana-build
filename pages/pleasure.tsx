@@ -1,15 +1,10 @@
 import Image from 'next/image'
 import styles from '../styles/pages/Together.module.css'
 
-const Together = () => {
+const Pleasure = () => {
     return (
         <>
-            <section className={styles.subheader}>
-                <h1 className={styles.subheader__title}>Pleasure menu</h1>
-            </section>
-            <main className={styles.together}>
-                <div className='container-one'>
-                <div className='container-two'>
+            <article className={styles.together}>
                 <section className={styles.together_item}>
                     <figure className={styles.together_item__image}>
                         <Image
@@ -130,11 +125,9 @@ const Together = () => {
                         The above rates are inclusive of travel within a 5km radius of the CBD.
                     </li>
                 </ul>
-                </div>
-                </div>
-            </main>
+            </article>
         </>
     )
 }
 
-export default Together
+export default Pleasure

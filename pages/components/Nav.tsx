@@ -5,13 +5,8 @@ const Nav = () => {
     return (
         <menu className={styles.nav}>
             <li className={styles.nav_item}>
-                <Link href='/about'>
-                    <a className={styles.nav_item__text}>About me</a>
-                </Link>
-            </li>
-            <li className={styles.nav_item}>
-                <Link href='/pleasure'>
-                    <a className={styles.nav_item__text}>Pleasure menu</a>
+                <Link href='/'>
+                    <a className={styles.nav_item__text}>Home</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>

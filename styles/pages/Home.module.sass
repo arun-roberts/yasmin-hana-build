@@ -1,59 +1,68 @@
 @use '../variables' as *
     
-.home 
-    position: relative
+.home
     width: 100%
-    height: 100%
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    background-image: url('/assets/Yasmin9.jpg')
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: 0% 0%
-    background-color: rgba(0, 0, 0, 0.4 )
-    background-blend-mode: multiply
+    padding-top: 3em
+    background-color: $light-pink-text
+    
+    &_hero
+        position: relative
+        width: 100%
+        aspect-ratio: 3/2   
 
-    &_header 
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
+        &__image
 
-        &__title
-            color: $light-pink-text
 
-        &__socials
-            width: 4.5em
+    &_about
+        width: 80%
+        display: grid
+        grid-template-columns: 1fr 1fr
+        padding: 2em
+        margin: 0 auto
 
-    &_nav 
-        width: 60%
-        display: flex
-        justify-content: space-between
-        align-items: center
-        font-size: 1.5em
-            
-        & *    
-            color: #ffefe8
-
-        &_item 
+        &_figure
             position: relative
-            font-size: 1em
-            font-weight: 300
+            width: 100%
+            aspect-ratio: 2/3
+            
+            &__image
 
-            &::before 
-                position: absolute
-                content: ''
-                bottom: 0
-                width: 100%
-                height: 1px
-                background-color: #ffefe8
-                transition: transform 200ms
-                transform: scaleX(0)
+        &_text
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            padding: 2em
 
-            &:hover::before 
-                transform: scaleX(1)
+            &__heading
+                text-transform: uppercase
+                font-weight: 200
+
+            &__body
+                font-size: 1.2em
+                font-weight: 200
+
+    &_break
+        width: 100%
+        aspect-ratio: 3/2
+        background-image: url('/assets/Yasmin1.jpg')
+        background-size: contain
+        background-repeat: no-repeat
+        
+        &_container
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-content: center
+
+            &__title
+                dispaly: inline-block
 
 
 
+    &_menu
+        width: 80%
+        margin: 0 auto
+
+        
