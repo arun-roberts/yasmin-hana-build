@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300500&display=swap");
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-#__next {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   font-family: "Manrope", sans-serif;
   background-color: #ffefe8;
@@ -38,10 +27,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0.3em 0.5em;
-}
-
-h1 {
-  text-transform: uppercase;
 }
 
 h1 span {

@@ -1,27 +1,26 @@
-.subheader {
-  position: fixed;
-  width: 100%;
-  height: 40em;
-  background-color: #ffefe8;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3em;
-  color: rgba(200, 30, 5, 0.8);
-  z-index: -1;
-  background-image: url("/assets/Yasmin4.jpg");
-  background-position: 0% 0%;
-}
-
 .spoil {
   width: 100%;
   height: 100%;
   display: grid;
-  padding-top: 40em;
+  padding-top: 3em;
   margin: 0 auto;
+}
+.spoil_subheader {
+  width: 100%;
+  aspect-ratio: 3/2;
+  background-image: url("/assets/Yasmin5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spoil_subheader__title {
+  font-size: 2em;
+  font-weight: 200;
+  height: 1em;
+  color: rgba(123, 30, 16, 0.8);
 }
 .spoil_container {
   width: 100%;

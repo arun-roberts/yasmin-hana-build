@@ -1,18 +1,30 @@
 @use '../variables' as *
     
-.subheader
-    @include sub-header
-    background-image: url('/assets/Yasmin4.jpg')
-    background-position: 0% 0%
-
     
 .spoil
     width: 100%
     height: 100%
     display: grid
-    padding-top: $photo-height
+    padding-top: 3em
     margin: 0 auto
 
+    &_subheader
+        width: 100%
+        aspect-ratio: 3/2
+        background-image: url('/assets/Yasmin5.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        &__title
+            font-size: 2em
+            font-weight: 200
+            height: 1em
+            color: rgba(123, 30, 16, 0.8)
+        
     &_container
         width: 100%
         height: 100%

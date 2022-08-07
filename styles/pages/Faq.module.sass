@@ -1,20 +1,31 @@
 @use '../variables' as *
-    
-.subheader
-    @include sub-header
-    background-image: url('/assets/Yasmin2.jpg')
-    background-position: 0% 0%
 
 .faq
     width: 100%
     height: 100%
     display: grid
-    padding-top: $photo-height
+    padding-top: 3em
     margin: 0 auto
 
+    &__hero
+        width: 100%
+        aspect-ratio: 3/2
+        background-image: url('/assets/Yasmin2.jpg')
+        background-size: contain
+        background-repeat: no-repeat
+        margin-bottom: 2em
+
+    &__title
+        width: 60%
+        font-size: 2em
+        font-weight: 200
+        margin: 0 auto
+
     &_faqs
+        width: 60%
         display: grid
         gap: 1em
+        margin: 1em auto 2em
 
         &_item
             display: grid

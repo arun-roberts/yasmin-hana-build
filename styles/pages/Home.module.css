@@ -9,7 +9,7 @@
   aspect-ratio: 3/2;
 }
 .home_about {
-  width: 80%;
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2em;
@@ -22,18 +22,17 @@
 }
 .home_about_text {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2em;
+  padding-left: 2em;
 }
 .home_about_text__heading {
   text-transform: uppercase;
   font-weight: 200;
+  margin-bottom: 0.5rem;
 }
 .home_about_text__body {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 200;
+  margin-bottom: 0.5rem;
 }
 .home_break {
   width: 100%;
@@ -41,18 +40,16 @@
   background-image: url("/assets/Yasmin1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-}
-.home_break_container {
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
-.home_break_container__title {
-  dispaly: inline-block;
+.home_break__title {
+  height: 1em;
+  color: rgba(123, 30, 16, 0.8);
 }
 .home_menu {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }/*# sourceMappingURL=Home.module.css.map */

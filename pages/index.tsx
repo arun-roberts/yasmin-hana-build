@@ -42,9 +42,7 @@ const Home: NextPage = () => {
                 </div>
             </section>
             <section className={styles.home_break}>
-                <div className={styles.home_break_container}>
-                    <h1 className={styles.home_break_container__title}>Pleasure menu</h1>
-                </div>
+                    <h1 className={styles.home_break__title}>Pleasure menu</h1>
             </section>
             <section className={styles.home_menu}>
                 <Pleasure />

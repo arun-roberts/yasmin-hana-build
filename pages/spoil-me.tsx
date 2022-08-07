@@ -4,22 +4,18 @@ import Link from 'next/link'
 const SpoilMe = () => {
     return (
         <>
-            <section className={styles.subheader}>
-                <h1 className={styles.subheader__title}>
-                    Spoil me
-                </h1>
-            </section>
             <main className={styles.spoil}>
-                <div className='container-one'>
-                    <div className='container-two'>
-                        <div className={styles.spoil_container}>
-                            <Link href='https://throne.me/u/yasminhana'>
-                                <a className={styles.spoil_container__shy}>
-                                    Don’t be shy...
-                                </a>
-                            </Link>
-                        </div>
-                    </div>
+                <section className={styles.spoil_subheader}>
+                    <h1 className={styles.spoil_subheader__title}>
+                        SPOIL ME
+                    </h1>
+                </section>
+                <div className={styles.spoil_container}>
+                    <Link href='https://throne.me/u/yasminhana'>
+                        <a className={styles.spoil_container__shy}>
+                            Don’t be shy...
+                        </a>
+                    </Link>
                 </div>
             </main>
         </>
