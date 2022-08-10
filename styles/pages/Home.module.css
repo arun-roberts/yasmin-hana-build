@@ -45,11 +45,15 @@
   justify-content: center;
   align-items: center;
 }
-.home_break__title {
-  height: 1em;
-  color: rgba(123, 30, 16, 0.8);
-}
 .home_menu {
   width: 60%;
   margin: 0 auto;
+  padding: 2em;
+}
+.home_menu__title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=Home.module.css.map */

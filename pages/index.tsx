@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Pleasure from './pleasure'
+import Footer from './components/Footer'
 import styles from '../styles/pages/Home.module.css'
 
 const Home: NextPage = () => {
@@ -41,13 +42,14 @@ const Home: NextPage = () => {
                     </p>
                 </div>
             </section>
-            <section className={styles.home_break}>
-                    <h1 className={styles.home_break__title}>Pleasure menu</h1>
-            </section>
+            <div className={styles.home_break}>
+            </div>
             <section className={styles.home_menu}>
+                <h1 className={styles.home_menu__title}>Pleasure menu</h1>
                 <Pleasure />
             </section>
         </main>
+        <Footer />
     </>
   )
 }

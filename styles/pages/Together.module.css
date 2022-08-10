@@ -2,7 +2,6 @@
   width: 100%;
   display: grid;
   gap: 1em;
-  padding: 2em;
   margin: 0 auto;
 }
 .together_item {
@@ -47,6 +46,8 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffefe8;
+}
+.together_item_text:nth-of-type(2n) {
   padding: 0.8em;
 }
 .together_item_text__title {
