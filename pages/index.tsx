@@ -7,16 +7,16 @@ import styles from '../styles/pages/Home.module.css'
 const Home: NextPage = () => {
   return (
     <>
-        <figure className={styles.home_hero}>
-            <Image 
-                className={styles.home_hero__image}
-                src='/assets/Yasmin3.jpg'
-                layout='fill'
-                objectFit='cover'
-                alt='Yasmin'
-            />
-        </figure>
         <main className={styles.home}>
+            <figure className={styles.home_hero}>
+                <Image 
+                    className={styles.home_hero__image}
+                    src='/assets/Yasmin3.jpg'
+                    layout='fill'
+                    objectFit='cover'
+                    alt='Yasmin'
+                />
+            </figure>
             <section className={styles.home_about}>
                 <figure className={styles.home_about_figure}>
                     <Image 

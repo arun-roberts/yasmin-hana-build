@@ -20,9 +20,9 @@ const SpoilMe = () => {
                     </Link>
                 </div>
             </main>
-            <div className={styles.spoil__footer}>
+            {/* <div className={styles.spoil__footer}>
                 <Footer />
-            </div>
+            </div> */}
         </>
     )
 }

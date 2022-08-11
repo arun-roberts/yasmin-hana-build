@@ -1,28 +1,35 @@
-.subheader {
-  position: fixed;
-  width: 100%;
-  height: 40em;
-  background-color: #ffefe8;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3em;
-  color: rgba(200, 30, 5, 0.8);
-  z-index: -1;
-  background-image: url("/assets/Yasmin13.jpg");
-  background-position: 0% 0%;
-}
-
 .touch {
-  padding-top: 40em;
+  padding-top: 3em;
   height: 100%;
   margin: 0 auto;
 }
-.touch__subtitle {
-  font-size: 1.4em;
-  text-transform: uppercase;
+.touch_hero {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.touch_text {
+  font-size: 1em;
+  font-weight: 300;
+  width: 60%;
+  margin: 0 auto;
+}
+.touch_text__title {
+  font-size: 2em;
   font-weight: 200;
+  margin: 0.8em auto 0.6em;
+  text-transform: uppercase;
+}
+.touch_text__subtitle {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.touch_text__dont {
+  font-style: italic;
+}
+.touch_text_links {
+  margin: 0 auto;
+}
+.touch_text_links__link * {
+  color: black;
 }/*# sourceMappingURL=Touch.module.css.map */
