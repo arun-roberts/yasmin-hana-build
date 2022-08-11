@@ -38,12 +38,6 @@ li {
   list-style: none;
 }
 
-a {
-  color: rgba(255, 239, 232, 0.9019607843);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 figure {
   position: relative;
 }

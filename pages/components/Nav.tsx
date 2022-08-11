@@ -6,12 +6,12 @@ const Nav = () => {
         <menu className={styles.nav}>
             <li className={styles.nav_item}>
                 <Link href='/'>
-                    <a className={styles.nav_item__text}>Home</a>
+                    <a className={styles.nav_item__text}>HOME</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
                 <Link href='/touch'>
-                    <a className={styles.nav_item__text}>Get in touch</a>
+                    <a className={styles.nav_item__text}>GET IN TOUCH</a>
                 </Link>
             </li>
             <li className={styles.nav_item}>
@@ -21,7 +21,7 @@ const Nav = () => {
             </li>
             <li className={styles.nav_item}>
                 <Link  href='/spoil-me'>
-                    <a className={styles.nav_item__text}>Spoil me</a>
+                    <a className={styles.nav_item__text}>SPOIL ME</a>
                 </Link>
             </li>
         </menu>

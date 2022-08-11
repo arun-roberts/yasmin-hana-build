@@ -1,7 +1,8 @@
+@charset "UTF-8";
 .touch {
   padding-top: 3em;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 1.5em;
 }
 .touch_hero {
   width: 100%;
@@ -28,8 +29,58 @@
   font-style: italic;
 }
 .touch_text_links {
-  margin: 0 auto;
+  margin-top: 1.4em;
+}
+.touch_text_links__link {
+  transition: color 250ms ease;
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
 }
 .touch_text_links__link * {
   color: black;
+}
+.touch_text_links__link *:hover {
+  color: rgba(200, 30, 5, 0.8);
+}
+.touch_text_details {
+  margin: 0.8em 0;
+}
+.touch_text_details__instruct {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.touch_text_details_list {
+  display: grid;
+  gap: 0.5em;
+  margin-top: 0.4em;
+}
+.touch_text_details_list__item {
+  position: relative;
+  padding-left: 1.2em;
+}
+.touch_text_details_list__item::before {
+  position: absolute;
+  content: "•";
+  left: 0.4em;
+}
+.touch_text_example {
+  margin: 0.8em 0;
+}
+.touch_text_example__instruct {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.touch_text_example_list {
+  display: grid;
+  gap: 0.5em;
+  margin-top: 0.6em;
+}
+.touch_text_example_list__item span {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgba(200, 30, 5, 0.8);
 }/*# sourceMappingURL=Touch.module.css.map */
