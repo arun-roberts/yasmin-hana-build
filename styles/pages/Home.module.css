@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   padding-top: 3em;
-  background-color: rgba(255, 239, 232, 0.9019607843);
+  background-color: #ffefe8;
 }
 .home_hero {
   position: relative;
@@ -10,20 +10,20 @@
   aspect-ratio: 3/2;
 }
 .home_about {
-  width: 70%;
+  width: 22em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2em;
+  padding: none;
   margin: 0 auto;
 }
 .home_about_figure {
+  display: none;
   position: relative;
   width: 100%;
   aspect-ratio: 2/3;
 }
 .home_about_text {
   width: 100%;
-  padding-left: 2em;
+  padding: 1.1em 0;
 }
 .home_about_text__heading {
   text-transform: uppercase;
@@ -47,14 +47,91 @@
   align-items: center;
 }
 .home_menu {
-  width: 60%;
+  width: 22em;
   margin: 0 auto;
-  padding: 2em;
+  padding: 0;
 }
 .home_menu__title {
   text-transform: uppercase;
   font-size: 1.8em;
   font-weight: 200;
+  text-align: center;
   color: black;
-  margin-bottom: 1em;
+  margin: 0.5em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    padding-top: 3em;
+  }
+  .home_about {
+    width: 30em;
+    display: grid;
+    padding: 2em;
+    margin: 0 auto;
+  }
+  .home_about_figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/3;
+  }
+  .home_about_text {
+    width: 100%;
+    padding-left: 2em;
+  }
+  .home_about_text__heading {
+    margin-bottom: 0.5rem;
+  }
+  .home_about_text__body {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+  }
+  .home_menu {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .home_menu__title {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home {
+    padding-top: 3em;
+  }
+  .home_about {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    margin: 0 auto;
+  }
+  .home_about_figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/3;
+  }
+  .home_about_text {
+    width: 100%;
+    padding-left: 2em;
+  }
+  .home_about_text__heading {
+    margin-bottom: 0.5rem;
+  }
+  .home_about_text__body {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+  }
+  .home_menu {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .home_menu__title {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
 }/*# sourceMappingURL=Home.module.css.map */

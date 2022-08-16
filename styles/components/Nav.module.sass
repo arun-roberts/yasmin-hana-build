@@ -1,5 +1,10 @@
+@use '../variables' as *
+    
 .nav 
+    // position: absolute
     width: 100%
+    // height: 100vh
+    // background-color: $opaque-pink-text
     display: flex
     justify-content: space-between
     align-items: center
@@ -28,3 +33,38 @@
 
         &:active
             color: $that-red-one
+
+@media screen and ( min-width: $tablet )
+    
+    .nav 
+        position: block
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 1em
+            
+        & *    
+            color: black
+
+        &_item 
+            position: relative
+            font-size: 1em
+            font-weight: 300
+
+            &::before 
+                position: absolute
+                content: ''
+                bottom: 0
+                width: 100%
+                height: 1px
+                background-color: black
+                transition: transform 200ms
+                transform: scaleX(0)
+
+            &:hover::before 
+                transform: scaleX(1)
+
+            &:active
+                color: $that-red-one

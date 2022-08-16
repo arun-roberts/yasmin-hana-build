@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300500&display=swap");
 body {
   font-family: "Manrope", sans-serif;
-  background-color: rgba(255, 239, 232, 0.9019607843);
+  background-color: #ffefe8;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 svg {
   width: 2em;
   height: 2em;
-  fill: rgba(255, 239, 232, 0.9019607843);
+  fill: #ffefe8;
 }
 
 header {
@@ -57,6 +57,6 @@ svg:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 239, 232, 0.9019607843);
+  background-color: #ffefe8;
   padding-bottom: 2em;
 }/*# sourceMappingURL=globals.css.map */

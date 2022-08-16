@@ -7,7 +7,7 @@
     margin: 0 auto
 
     &_item
-        min-height: 30em
+        min-height: 13em
         display: flex
         flex-direction: row-reverse
         justify-content: space-between
@@ -22,43 +22,31 @@
             align-items: flex-end
 
         &:nth-of-type(4)
-            height: 36em
+            height: 40em
             
-            
-        &_box
-            width: 49%
-            background-color: black
-            display: flex
-            justify-content: center
-            align-items: center
-
-            &__title
-                color: $light-pink-text
-                font-size: 2em
-                font-weight: 200
-
         &__image
             position: relative
-            width: 49%
+            width: 35%
             height: 100%
-            min-height: 30em
+            min-height: 20em
 
         &_text
-            width: 49%
+            width: 65%
             display: flex
             flex-direction: column
             justify-content: center
             background-color: $light-pink-text
-
-            &:nth-of-type(2n)
-                padding: 0.8em
+            padding: 1.5em 0
 
             &__title
+                width: 94%
+                font-size: 1.6em
                 text-transform: uppercase
                 font-weight: 200
                 margin-bottom: 0.8rem
 
             &_priceList
+                width: 94%
                 margin-bottom: 0.8rem
 
                 &__time
@@ -68,7 +56,7 @@
                     font-weight: 200
 
             &__body
-                width: 80%
+                width: 94%
                 font-weight: 200
                 margin-bottom: 0.8rem
 
@@ -76,7 +64,91 @@
         display: grid
         gap: 0.8em
         margin-top: 1.5em
+        margin-bottom: 1.5em
 
         &__item
             font-weight: 200
             font-style: italic
+
+@media screen and ( min-width: $desktop-sm )
+    
+    .together
+        width: 100%
+        display: grid
+        gap: 1em
+        margin: 0 auto
+
+        &_item
+            min-height: 30em
+            display: flex
+            flex-direction: row-reverse
+            justify-content: space-between
+        
+            &:nth-of-type(2n)
+                flex-direction: row
+
+            &:nth-last-of-type(2n) *
+                text-align: right
+
+            &:nth-of-type(2n) div
+                align-items: flex-end
+
+            &:nth-of-type(4)
+                height: 36em
+                
+                
+            &_box
+                width: 49%
+                background-color: black
+                display: flex
+                justify-content: center
+                align-items: center
+
+                &__title
+                    color: $light-pink-text
+                    font-size: 2em
+                    font-weight: 200
+
+            &__image
+                position: relative
+                width: 49%
+                height: 100%
+                min-height: 30em
+
+            &_text
+                width: 49%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                background-color: $light-pink-text
+
+                &:nth-of-type(2n)
+                    padding: 0.8em
+
+                &__title
+                    text-transform: uppercase
+                    font-weight: 200
+                    margin-bottom: 0.8rem
+
+                &_priceList
+                    margin-bottom: 0.8rem
+
+                    &__time
+                        font-weight: 800
+
+                    &__price
+                        font-weight: 200
+
+                &__body
+                    width: 80%
+                    font-weight: 200
+                    margin-bottom: 0.8rem
+
+        &_aside
+            display: grid
+            gap: 0.8em
+            margin-top: 1.5em
+
+            &__item
+                font-weight: 200
+                font-style: italic

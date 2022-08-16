@@ -15,13 +15,13 @@
 
 
     &_about
-        width: 70%
+        width: 22em
         display: grid
-        grid-template-columns: 1fr 1fr
-        padding: 2em
+        padding: none
         margin: 0 auto
 
         &_figure
+            display: none
             position: relative
             width: 100%
             aspect-ratio: 2/3
@@ -30,7 +30,7 @@
 
         &_text
             width: 100%
-            padding-left: 2em
+            padding: 1.1em 0
 
             &__heading
                 text-transform: uppercase
@@ -55,14 +55,107 @@
 
 
     &_menu
-        width: 60%
+        width: 22em
         margin: 0 auto
-        padding: 2em
+        padding: 0
 
         &__title
             text-transform: uppercase
             font-size: 1.8em
             font-weight: 200
+            text-align: center
             color: black
-            margin-bottom: 1em
+            margin: 0.5em 0
+
+@media screen and ( min-width: $tablet )
+    .home
+        padding-top: 3em
         
+        &_hero
+
+            &__image
+
+
+        &_about
+            width: 30em
+            display: grid
+            padding: 2em
+            margin: 0 auto
+
+            &_figure
+                position: relative
+                width: 100%
+                aspect-ratio: 2/3
+                
+                &__image
+
+            &_text
+                width: 100%
+                padding-left: 2em
+
+                &__heading
+                    margin-bottom: 0.5rem
+
+                &__body
+                    font-size: 1.1em
+                    font-weight: 200
+                    margin-bottom: 0.5rem
+
+        &_break
+
+
+        &_menu
+            width: 60%
+            margin: 0 auto
+            padding: 2em
+
+            &__title
+                font-size: 1.8em
+                margin-bottom: 1em
+        
+@media screen and ( min-width: $desktop-sm )
+    .home
+        padding-top: 3em
+        
+        &_hero
+
+            &__image
+
+
+        &_about
+            width: 70%
+            display: grid
+            grid-template-columns: 1fr 1fr
+            padding: 2em
+            margin: 0 auto
+
+            &_figure
+                position: relative
+                width: 100%
+                aspect-ratio: 2/3
+                
+                &__image
+
+            &_text
+                width: 100%
+                padding-left: 2em
+
+                &__heading
+                    margin-bottom: 0.5rem
+
+                &__body
+                    font-size: 1.1em
+                    font-weight: 200
+                    margin-bottom: 0.5rem
+
+        &_break
+
+
+        &_menu
+            width: 60%
+            margin: 0 auto
+            padding: 2em
+
+            &__title
+                font-size: 1.8em
+                margin-bottom: 1em
