@@ -23,17 +23,24 @@
 }
 .home_about_text {
   width: 100%;
-  padding: 1.1em 0;
+  display: grid;
+  gap: 0.7em;
+  padding: 1.1em 0 1em;
 }
 .home_about_text__heading {
-  text-transform: uppercase;
+  font-size: 1.4em;
   font-weight: 200;
-  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .home_about_text__heading {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0.8em auto 0.6em;
+  }
 }
 .home_about_text__body {
-  font-size: 1.1em;
-  font-weight: 200;
-  margin-bottom: 0.5rem;
+  font-size: 1em;
+  font-weight: 300;
 }
 .home_break {
   width: 100%;
@@ -53,7 +60,7 @@
 }
 .home_menu__title {
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 200;
   text-align: center;
   color: black;

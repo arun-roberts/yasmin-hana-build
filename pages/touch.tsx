@@ -19,7 +19,7 @@ const Touch = () => {
                 <section className={styles.touch_text}>
                     <h1 className={styles.touch_text__title}>Get in touch</h1>
                     <h2 className={styles.touch_text__subtitle}>
-                        Whether you already know what you’re looking for or if you have some questions, you can contact me and we’ll take it from there.
+                        Whether you already know what you’re looking for or you have some questions, you can contact me and we’ll take it from there.
                     </h2>
                     <p className={styles.touch_text__dont}>
                         Please email or text me (SMS and Whatsapp). I do not answer unscheduled phone calls.
@@ -46,7 +46,7 @@ const Touch = () => {
                             <li className={styles.touch_text_details_list__item}>Your location.</li>
                             <li className={styles.touch_text_details_list__item}>Preferred date(s) and time(s).</li>
                             <li className={styles.touch_text_details_list__item}>
-                                Any details, ideas or specific things that you’d like to include in our time together. You don’t have to know what you’re looking for, we can work that out together and create an experience tailored to your personal desires.
+                                Any details, ideas or specific things that you’d like to include in our time together. You don’t have to know what you’re looking for. We can work that out together and create an experience tailored to your personal desires.
                             </li>
                             <li className={styles.touch_text_details_list__item}>Any questions.</li>
                         </ul>
@@ -61,10 +61,10 @@ const Touch = () => {
                                 My name is <span>your name</span>, I’m located at <span>your location</span>.
                             </li> 
                             <li className={styles.touch_text_example_list__item}>
-                                I would like to organise a <span>duration and kind of service</span> session <br/> with you on <span>preferred date</span> at <span>preferred time</span>.
+                                I would like to organise a <span>duration and kind of service</span> session with you on <span>preferred date</span> at <span>preferred time</span>.
                             </li> 
                             <li className={styles.touch_text_example_list__item}>
-                                <span>Any details/ specific requests/ interests / kinks / questions</span>
+                                <span>Any details / specific requests / interests / kinks / questions</span>
                             </li>
                         </ul>    
                     </div>

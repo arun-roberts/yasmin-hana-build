@@ -30,17 +30,20 @@
 
         &_text
             width: 100%
-            padding: 1.1em 0
+            display: grid
+            gap: 0.7em
+            padding: 1.1em 0 1em
 
             &__heading
-                text-transform: uppercase
-                font-weight: 200
-                margin-bottom: 0.5rem
+                @include title
+                // font-size: 1.4em
+                // text-transform: uppercase
+                // font-weight: 200
 
             &__body
-                font-size: 1.1em
-                font-weight: 200
-                margin-bottom: 0.5rem
+                @include body
+                // font-size: 1.1em
+                // font-weight: 200
 
     &_break
         width: 100%
@@ -61,7 +64,7 @@
 
         &__title
             text-transform: uppercase
-            font-size: 1.8em
+            font-size: 1.4em
             font-weight: 200
             text-align: center
             color: black

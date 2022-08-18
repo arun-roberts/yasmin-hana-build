@@ -7,16 +7,32 @@ $that-red-one: rgba(200, 30, 5, 0.8)
 $tablet: 768px
 $desktop-sm: 1200px 
 
+// GENERIC FONTS
 @mixin title
-    font-size: 2em
+    font-size: 1.4em
     font-weight: 200
-    margin: 0.8em auto 0.6em
+
+    @media screen and ( min-width: $desktop-sm  )
+        font-size: 2em
+        font-weight: 200
+        margin: 0.8em auto 0.6em
 
 @mixin subtitle
-    font-size: 1.4em
+    font-size: 1.1em
     font-weight: 300
     text-transform: uppercase
+
+    @media screen and ( min-width: $desktop-sm )
+        font-size: 1.4em
 
 @mixin body
     font-size: 1em
     font-weight: 300
+
+// SPACING
+@mixin container
+    width: 22rem
+    margin: 0 auto
+
+    @media ( min-width: $desktop-sm )
+        width: 30rem

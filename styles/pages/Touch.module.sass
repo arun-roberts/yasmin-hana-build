@@ -11,12 +11,13 @@
 
     &_text
         @include body
-        width: 60%
+        @include container
         margin: 0 auto
 
         &__title
             @include title
             text-transform: uppercase
+            margin: 0.6em auto 0.4em
 
         &__subtitle
             @include subtitle
@@ -42,8 +43,8 @@
             margin: 0.8em 0
 
             &__instruct
-                @include subtitle
-                font-size: 1.2em
+                @include body
+                text-transform: uppercase
 
             &_list
                 display: grid
@@ -63,8 +64,8 @@
             margin: 0.8em 0
 
             &__instruct
-                @include subtitle
-                font-size: 1.2em
+                @include body
+                text-transform: uppercase
 
             &_list
                 display: grid
@@ -73,6 +74,84 @@
 
                 &__item span
                     text-transform: uppercase
-                    // font-style: italic
-                    font-weight: 400
+                    font-weight: 200
                     color: $that-red-one
+
+@media screen and ( min-width: $desktop-sm  )
+    
+    .touch
+        padding-top: 3em
+        height: 100%
+        margin: 0 auto 1.5em
+
+        &_hero
+            width: 100%
+            aspect-ratio: 3/2
+
+        &_text
+            @include body
+            width: 60%
+            margin: 0 auto
+
+            &__title
+                @include title
+                text-transform: uppercase
+
+            &__subtitle
+                @include subtitle
+
+            &__dont
+                font-style: italic
+
+            &_links
+                margin-top: 1.4em 
+
+                &__link
+                    transition: color 250ms ease
+                    margin-bottom: 0.6em    
+                    font-size: 1.1em
+
+                &__link *
+                    color: black 
+
+                    &:hover
+                        color: $that-red-one
+
+            &_details
+                margin: 0.8em 0
+
+                &__instruct
+                    @include subtitle
+                    font-size: 1.2em
+
+                &_list
+                    display: grid
+                    gap: 0.5em
+                    margin-top: 0.4em
+
+                    &__item
+                        position: relative
+                        padding-left: 1.2em
+
+                        &::before
+                            position: absolute
+                            content: '•'
+                            left: 0.4em
+            
+            &_example
+                margin: 0.8em 0
+
+                &__instruct
+                    @include subtitle
+                    font-size: 1.2em
+
+                &_list
+                    display: grid
+                    gap: 0.5em
+                    margin-top: 0.6em
+
+                    &__item span
+                        text-transform: uppercase
+                        // font-style: italic
+                        font-weight: 400
+                        color: $that-red-one

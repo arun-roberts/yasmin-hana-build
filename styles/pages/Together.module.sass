@@ -39,13 +39,15 @@
             padding: 1.5em 0
 
             &__title
+                @include subtitle
                 width: 94%
-                font-size: 1.6em
-                text-transform: uppercase
-                font-weight: 200
+                // font-size: 1.2em
+                // text-transform: uppercase
+                // font-weight: 200
                 margin-bottom: 0.8rem
 
             &_priceList
+                @include body
                 width: 94%
                 margin-bottom: 0.8rem
 
@@ -96,19 +98,6 @@
             &:nth-of-type(4)
                 height: 36em
                 
-                
-            &_box
-                width: 49%
-                background-color: black
-                display: flex
-                justify-content: center
-                align-items: center
-
-                &__title
-                    color: $light-pink-text
-                    font-size: 2em
-                    font-weight: 200
-
             &__image
                 position: relative
                 width: 49%
@@ -126,22 +115,13 @@
                     padding: 0.8em
 
                 &__title
-                    text-transform: uppercase
-                    font-weight: 200
                     margin-bottom: 0.8rem
 
                 &_priceList
                     margin-bottom: 0.8rem
 
-                    &__time
-                        font-weight: 800
-
-                    &__price
-                        font-weight: 200
-
                 &__body
                     width: 80%
-                    font-weight: 200
                     margin-bottom: 0.8rem
 
         &_aside

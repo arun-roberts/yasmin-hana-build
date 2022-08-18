@@ -19,9 +19,9 @@ const FAQ = [
         a: ['I’m super excited that you’d like to spend time with me, but you don’t have to know what you’re looking for. If you have read my pleasure menu (link) and still don’t quite know what you’d like, send me a message (link) and we can discuss options together. We can always go with the flow and work it out during our time together. ']
     },
     {
-        q: 'What is your booking process/ cancellation policy?',
+        q: 'What is your booking process / cancellation policy?',
         a: [
-            'For new clients, I’ll arrange a ten minute phone to call to discuss the booking prior to meeting.', 
+            'For new clients, I’ll arrange a ten minute phone call to discuss the booking, prior to meeting.', 
             'A small deposit is required to secure the booking. These deposits are non-refundable but I’m happy to reschedule our appointment if given more than 24 hours notice. Cancellations within 24 hours will forfeit the deposit unless you can show a positive PCR or RAT test. '
         ]
     },

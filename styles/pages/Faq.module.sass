@@ -13,31 +13,27 @@
         background-image: url('/assets/Yasmin2.jpg')
         background-size: contain
         background-repeat: no-repeat
-        margin-bottom: 2em
 
     &__title
-        width: 60%
-        font-size: 2em
-        font-weight: 200
-        margin: 0 auto
+        @include title
+        @include container
+        margin: 0.8em auto
 
     &_faqs
-        width: 60%
+        @include container
         display: grid
         gap: 1em
-        margin: 1em auto 2em
+        margin-bottom: 2em
 
         &_item
             display: grid
             gap: 0.8em
 
             &__q
-                font-size: 1.4em
-                font-weight: 300
-                text-transform: uppercase
+                @include subtitle
 
             &__a
-                font-weight: 300
+                @include body
 
         &__aside
             font-weight: 300
@@ -49,3 +45,50 @@
 
             &:hover
                 color: $that-red-one
+
+@media screen and ( min-width: $desktop-sm )
+    .faq
+        width: 100%
+        height: 100%
+        display: grid
+        padding-top: 3em
+        margin: 0 auto
+
+        &__hero
+            width: 100%
+            aspect-ratio: 3/2
+            background-image: url('/assets/Yasmin2.jpg')
+            background-size: contain
+            background-repeat: no-repeat
+
+        &__title
+            @include title
+            @include container
+            margin: 0.8em auto
+
+        &_faqs
+            @include container
+            display: grid
+            gap: 1em
+            margin-bottom: 2em
+
+            &_item
+                display: grid
+                gap: 0.8em
+
+                &__q
+                    @include subtitle
+
+                &__a
+                    @include body
+
+            &__aside
+                font-weight: 300
+                font-style: italic
+
+            &__link
+                color: inherit
+                transition: color 150ms ease
+
+                &:hover
+                    color: $that-red-one

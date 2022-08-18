@@ -11,19 +11,37 @@
 .touch_text {
   font-size: 1em;
   font-weight: 300;
-  width: 60%;
+  width: 22rem;
+  margin: 0 auto;
   margin: 0 auto;
 }
+@media (min-width: 1200px) {
+  .touch_text {
+    width: 30rem;
+  }
+}
 .touch_text__title {
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 200;
-  margin: 0.8em auto 0.6em;
   text-transform: uppercase;
+  margin: 0.6em auto 0.4em;
+}
+@media screen and (min-width: 1200px) {
+  .touch_text__title {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0.8em auto 0.6em;
+  }
 }
 .touch_text__subtitle {
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .touch_text__subtitle {
+    font-size: 1.4em;
+  }
 }
 .touch_text__dont {
   font-style: italic;
@@ -46,10 +64,9 @@
   margin: 0.8em 0;
 }
 .touch_text_details__instruct {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 1.2em;
 }
 .touch_text_details_list {
   display: grid;
@@ -69,10 +86,9 @@
   margin: 0.8em 0;
 }
 .touch_text_example__instruct {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 1.2em;
 }
 .touch_text_example_list {
   display: grid;
@@ -81,6 +97,129 @@
 }
 .touch_text_example_list__item span {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 200;
   color: rgba(200, 30, 5, 0.8);
+}
+
+@media screen and (min-width: 1200px) {
+  .touch {
+    padding-top: 3em;
+    height: 100%;
+    margin: 0 auto 1.5em;
+  }
+  .touch_hero {
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  .touch_text {
+    font-size: 1em;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .touch_text__title {
+    font-size: 1.4em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .touch_text__title {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0.8em auto 0.6em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text__subtitle {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .touch_text__subtitle {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text__dont {
+    font-style: italic;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_links {
+    margin-top: 1.4em;
+  }
+  .touch_text_links__link {
+    transition: color 250ms ease;
+    margin-bottom: 0.6em;
+    font-size: 1.1em;
+  }
+  .touch_text_links__link * {
+    color: black;
+  }
+  .touch_text_links__link *:hover {
+    color: rgba(200, 30, 5, 0.8);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_details {
+    margin: 0.8em 0;
+  }
+  .touch_text_details__instruct {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .touch_text_details__instruct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_details_list {
+    display: grid;
+    gap: 0.5em;
+    margin-top: 0.4em;
+  }
+  .touch_text_details_list__item {
+    position: relative;
+    padding-left: 1.2em;
+  }
+  .touch_text_details_list__item::before {
+    position: absolute;
+    content: "•";
+    left: 0.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_example {
+    margin: 0.8em 0;
+  }
+  .touch_text_example__instruct {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .touch_text_example__instruct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_example_list {
+    display: grid;
+    gap: 0.5em;
+    margin-top: 0.6em;
+  }
+  .touch_text_example_list__item span {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(200, 30, 5, 0.8);
+  }
 }/*# sourceMappingURL=Touch.module.css.map */
