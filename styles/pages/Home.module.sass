@@ -15,7 +15,7 @@
 
 
     &_about
-        width: 22em
+        @include container
         display: grid
         padding: none
         margin: 0 auto
@@ -30,20 +30,19 @@
 
         &_text
             width: 100%
-            display: grid
-            gap: 0.7em
             padding: 1.1em 0 1em
 
             &__heading
-                @include title
-                // font-size: 1.4em
-                // text-transform: uppercase
-                // font-weight: 200
+                @include subtitle
+                font-size: 1.4em
+                margin-bottom: 0.5em
 
-            &__body
+            &_body
                 @include body
-                // font-size: 1.1em
-                // font-weight: 200
+                display: grid
+                gap: 0.7em
+
+                &__item
 
     &_break
         width: 100%
@@ -58,7 +57,7 @@
 
 
     &_menu
-        width: 22em
+        @include container
         margin: 0 auto
         padding: 0
 
@@ -80,12 +79,11 @@
 
 
         &_about
-            width: 30em
             display: grid
-            padding: 2em
             margin: 0 auto
 
             &_figure
+                display: block
                 position: relative
                 width: 100%
                 aspect-ratio: 2/3
@@ -93,22 +91,13 @@
                 &__image
 
             &_text
-                width: 100%
                 padding-left: 2em
 
-                &__heading
-                    margin-bottom: 0.5rem
 
-                &__body
-                    font-size: 1.1em
-                    font-weight: 200
-                    margin-bottom: 0.5rem
 
         &_break
 
-
         &_menu
-            width: 60%
             margin: 0 auto
             padding: 2em
 
@@ -126,7 +115,6 @@
 
 
         &_about
-            width: 70%
             display: grid
             grid-template-columns: 1fr 1fr
             padding: 2em
@@ -141,21 +129,21 @@
 
             &_text
                 width: 100%
-                padding-left: 2em
+                padding: 0
+                padding-left: 1.5em
 
                 &__heading
-                    margin-bottom: 0.5rem
+                    margin-bottom: 0.5em
 
-                &__body
-                    font-size: 1.1em
-                    font-weight: 200
-                    margin-bottom: 0.5rem
+                &_body
+                    gap: 0.4em
+
+
 
         &_break
 
 
         &_menu
-            width: 60%
             margin: 0 auto
             padding: 2em
 

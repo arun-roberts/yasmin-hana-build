@@ -11,6 +11,11 @@ const Header = () => {
             <div className={styles.header__nav}>
                 <Nav />
             </div>
+            <div className={styles.header_mobileOnly}>
+                <div className={styles.header_mobileOnly__item}></div>
+                <div className={styles.header_mobileOnly__item}></div>
+                <div className={styles.header_mobileOnly__item}></div>
+            </div>
         </header>
     )
 }

@@ -14,7 +14,6 @@ $desktop-sm: 1200px
 
     @media screen and ( min-width: $desktop-sm  )
         font-size: 2em
-        font-weight: 200
         margin: 0.8em auto 0.6em
 
 @mixin subtitle
@@ -29,10 +28,13 @@ $desktop-sm: 1200px
     font-size: 1em
     font-weight: 300
 
+    @media screen and ( min-width: $desktop-sm )
+        font-size: 0.965em
+
 // SPACING
 @mixin container
     width: 22rem
     margin: 0 auto
 
-    @media ( min-width: $desktop-sm )
-        width: 30rem
+    @media screen and ( min-width: $desktop-sm )
+        width: 56rem

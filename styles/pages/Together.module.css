@@ -54,6 +54,11 @@
   width: 94%;
   margin-bottom: 0.8rem;
 }
+@media screen and (min-width: 1200px) {
+  .together_item_text_priceList {
+    font-size: 0.965em;
+  }
+}
 .together_item_text_priceList__time {
   font-weight: 800;
 }

@@ -15,9 +15,14 @@
   margin: 0 auto;
   margin: 0 auto;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .touch_text {
-    width: 30rem;
+    font-size: 0.965em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .touch_text {
+    width: 56rem;
   }
 }
 .touch_text__title {
@@ -29,7 +34,6 @@
 @media screen and (min-width: 1200px) {
   .touch_text__title {
     font-size: 2em;
-    font-weight: 200;
     margin: 0.8em auto 0.6em;
   }
 }
@@ -68,6 +72,11 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .touch_text_details__instruct {
+    font-size: 0.965em;
+  }
+}
 .touch_text_details_list {
   display: grid;
   gap: 0.5em;
@@ -89,6 +98,11 @@
   font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_example__instruct {
+    font-size: 0.965em;
+  }
 }
 .touch_text_example_list {
   display: grid;
@@ -117,6 +131,13 @@
     width: 60%;
     margin: 0 auto;
   }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .touch_text {
+    font-size: 0.965em;
+  }
+}
+@media screen and (min-width: 1200px) {
   .touch_text__title {
     font-size: 1.4em;
     font-weight: 200;
@@ -126,7 +147,6 @@
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .touch_text__title {
     font-size: 2em;
-    font-weight: 200;
     margin: 0.8em auto 0.6em;
   }
 }
