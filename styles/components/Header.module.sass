@@ -95,6 +95,11 @@
             background-color: $opaque-pink-text
             display: flex
             align-items: center
+            transform: translateX(100%)
+            transition: transform 250ms ease
+
+            &___open
+                transform: translateX(0)
 
         &_mobileOnly
             position: absolute
