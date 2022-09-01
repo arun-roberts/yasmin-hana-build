@@ -1,5 +1,6 @@
 import styles from '../styles/pages/Faq.module.css'
 import { FAQ } from '../public/FAQ'
+import Footer from './components/Footer'
 import Link from 'next/link'
 
 const Faq = () => {
@@ -29,6 +30,7 @@ const Faq = () => {
                         Do you still have some questions? Head to the <Link href='/touch'><a className={styles.faq_faqs__link}>Contact Me</a></Link> page to get your questions answered.
                     </li>
                 </ul>
+                <Footer />
             </main>
         </>
     )

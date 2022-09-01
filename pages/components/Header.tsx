@@ -16,7 +16,10 @@ const Header = () => {
             >
                 <Nav />
             </div>
-            <div onClick={() => setDropDown(!dropDown)} className={styles.header_mobileOnly}>
+            <div 
+                onClick={() => setDropDown(!dropDown)} 
+                className={dropDown ? `${styles.header_mobileOnly} ${styles.header_mobileOnly___open}` : `${styles.header_mobileOnly}`}
+            >
                 <div className={styles.header_mobileOnly__item}></div>
                 <div className={styles.header_mobileOnly__item}></div>
                 <div className={styles.header_mobileOnly__item}></div>
