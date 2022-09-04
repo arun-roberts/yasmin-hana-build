@@ -10,79 +10,99 @@
   aspect-ratio: 3/2;
 }
 .home_about {
-  width: 22rem;
+  width: 22em;
   margin: 0 auto;
-  display: grid;
   padding: none;
   margin: 0 auto;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
   .home_about {
-    width: 56rem;
+    width: 40em;
   }
 }
-.home_about_figure {
+@media screen and (min-width: 1200px) {
+  .home_about {
+    width: 56em;
+  }
+}
+.home_about__heading {
+  font-size: 1.4em;
+  font-weight: 200;
+  margin: 0.5em auto 0.4em;
+  width: 100%;
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 767px) {
+  .home_about__heading {
+    font-size: 1.6em;
+    margin: 0.8em auto 0.6em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home_about__heading {
+    font-size: 2em;
+  }
+}
+.home_about_content {
+  display: grid;
+}
+.home_about_content_figure {
   display: none;
   position: relative;
   width: 100%;
   aspect-ratio: 2/3;
 }
-.home_about_text {
+.home_about_content_text {
   width: 100%;
-  padding: 1.1em 0 1em;
-}
-.home_about_text__heading {
-  font-size: 1.1em;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  margin-bottom: 0.5em;
-}
-@media screen and (min-width: 1200px) {
-  .home_about_text__heading {
-    font-size: 1.4em;
-  }
-}
-.home_about_text_body {
+  padding-bottom: 1em;
   font-size: 1em;
   font-weight: 300;
   display: grid;
   gap: 0.7em;
 }
 @media screen and (min-width: 1200px) {
-  .home_about_text_body {
+  .home_about_content_text {
     font-size: 0.965em;
   }
 }
 .home_break {
+  position: relative;
   width: 100%;
   aspect-ratio: 3/2;
-  background-image: url("/assets/Yasmin1.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .home_menu {
-  width: 22rem;
+  width: 22em;
   margin: 0 auto;
   margin: 0 auto;
   padding: 0;
 }
+@media screen and (min-width: 767px) {
+  .home_menu {
+    width: 40em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .home_menu {
-    width: 56rem;
+    width: 56em;
   }
 }
 .home_menu__title {
-  text-transform: uppercase;
   font-size: 1.4em;
   font-weight: 200;
-  text-align: center;
-  color: black;
-  margin: 0.5em 0;
+  margin: 0.5em auto 0.4em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 767px) {
+  .home_menu__title {
+    font-size: 1.6em;
+    margin: 0.8em auto 0.6em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home_menu__title {
+    font-size: 2em;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -90,25 +110,25 @@
     padding-top: 3em;
   }
   .home_about {
-    display: grid;
+    padding-bottom: 2em;
     margin: 0 auto;
   }
-  .home_about_figure {
+  .home_about_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .home_about_content_figure {
     display: block;
     position: relative;
     width: 100%;
     aspect-ratio: 2/3;
   }
-  .home_about_text {
-    padding-left: 2em;
+  .home_about_content_text {
+    padding: 0 0 0 1em;
   }
   .home_menu {
     margin: 0 auto;
-    padding: 2em;
-  }
-  .home_menu__title {
-    font-size: 1.8em;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -116,33 +136,32 @@
     padding-top: 3em;
   }
   .home_about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    margin: 0 auto;
+    padding-bottom: 2em;
   }
-  .home_about_figure {
+  .home_about__heading {
+    margin-bottom: 0.5em;
+  }
+  .home_about_content_figure {
     position: relative;
     width: 100%;
     aspect-ratio: 2/3;
   }
-  .home_about_text {
+  .home_about_content_text {
     width: 100%;
+    font-size: 1em;
     padding: 0;
     padding-left: 1.5em;
+    padding-bottom: 3em;
+    gap: 0.1em;
   }
-  .home_about_text__heading {
-    margin-bottom: 0.5em;
-  }
-  .home_about_text_body {
-    gap: 0.4em;
+  .home_about_content_text__item {
+    margin: 0;
   }
   .home_menu {
     margin: 0 auto;
     padding: 2em;
   }
   .home_menu__title {
-    font-size: 1.8em;
-    margin-bottom: 1em;
+    text-align: left;
   }
 }/*# sourceMappingURL=Home.module.css.map */

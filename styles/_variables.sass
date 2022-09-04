@@ -6,15 +6,22 @@ $that-red-one: rgba(200, 30, 5, 0.8)
 // BREAKPOINTS
 $tablet: 767px
 $desktop-sm: 1200px 
+$desktop-m: 1800px
+$desktop-l: 2500px
+$desktop-xl: 2500px
 
 // GENERIC FONTS
 @mixin title
     font-size: 1.4em
     font-weight: 200
+    margin: 0.5em auto 0.4em
+
+    @media screen and ( min-width: $tablet )
+        font-size: 1.6em
+        margin: 0.8em auto 0.6em
 
     @media screen and ( min-width: $desktop-sm  )
         font-size: 2em
-        margin: 0.8em auto 0.6em
 
 @mixin subtitle
     font-size: 1.1em
@@ -33,8 +40,17 @@ $desktop-sm: 1200px
 
 // SPACING
 @mixin container
-    width: 22rem
+    width: 22em
     margin: 0 auto
 
+    @media screen and ( min-width: $tablet )
+        width: 40em
+
     @media screen and ( min-width: $desktop-sm )
-        width: 56rem
+        width: 56em
+
+@mixin before-height
+    height: 1px
+
+    @media screen and ( min-width: $desktop-m )
+        height: 0.06em

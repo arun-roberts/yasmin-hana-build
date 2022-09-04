@@ -16,28 +16,30 @@
 
     &_about
         @include container
-        display: grid
         padding: none
         margin: 0 auto
-
-        &_figure
-            display: none
-            position: relative
+        
+        &__heading
+            @include title
             width: 100%
-            aspect-ratio: 2/3
+            font-size: 1.4em
+            margin-bottom: 0.5em
+
+        &_content
+            display: grid
+
+            &_figure
+                display: none
+                position: relative
+                width: 100%
+                aspect-ratio: 2/3
+                
+                &__image
             
-            &__image
 
-        &_text
-            width: 100%
-            padding: 1.1em 0 1em
-
-            &__heading
-                @include subtitle
-                font-size: 1.4em
-                margin-bottom: 0.5em
-
-            &_body
+            &_text
+                width: 100%
+                padding-bottom: 1em
                 @include body
                 display: grid
                 gap: 0.7em
@@ -45,16 +47,9 @@
                 &__item
 
     &_break
+        position: relative
         width: 100%
         aspect-ratio: 3/2
-        background-image: url('/assets/Yasmin1.jpg')
-        background-size: contain
-        background-repeat: no-repeat
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-
 
     &_menu
         @include container
@@ -62,48 +57,47 @@
         padding: 0
 
         &__title
+            @include title
             text-transform: uppercase
-            font-size: 1.4em
-            font-weight: 200
-            text-align: center
-            color: black
-            margin: 0.5em 0
+            // font-size: 1.4em
+            // font-weight: 200
+            // text-align: center
+            // color: black
+            // margin: 0.5em 0
 
 @media screen and ( min-width: $tablet )
     .home
         padding-top: 3em
-        
-        &_hero
-
-            &__image
-
 
         &_about
-            display: grid
+            padding-bottom: 2em
             margin: 0 auto
 
-            &_figure
-                display: block
-                position: relative
-                width: 100%
-                aspect-ratio: 2/3
-                
-                &__image
+            &_content
+                display: grid
+                grid-template-columns: 1fr 1fr
 
-            &_text
-                padding-left: 2em
+                &_figure
+                    display: block
+                    position: relative
+                    width: 100%
+                    aspect-ratio: 2/3
+                    
+                    &__image
 
+                &_text
+                    padding: 0 0 0 1em
 
 
         &_break
 
         &_menu
             margin: 0 auto
-            padding: 2em
+            padding-bottom: 1em
 
             &__title
-                font-size: 1.8em
-                margin-bottom: 1em
+                // font-size: 1.8em
+                // margin-bottom: 1em
         
 @media screen and ( min-width: $desktop-sm )
     .home
@@ -115,29 +109,30 @@
 
 
         &_about
-            display: grid
-            grid-template-columns: 1fr 1fr
-            padding: 2em
-            margin: 0 auto
+            padding-bottom: 2em
 
-            &_figure
-                position: relative
-                width: 100%
-                aspect-ratio: 2/3
-                
-                &__image
+            &__heading
+                margin-bottom: 0.5em
+            
+            &_content
 
-            &_text
-                width: 100%
-                padding: 0
-                padding-left: 1.5em
+                &_figure
+                    position: relative
+                    width: 100%
+                    aspect-ratio: 2/3
+                    
+                    &__image
 
-                &__heading
-                    margin-bottom: 0.5em
+                &_text
+                    width: 100%
+                    font-size: 1em
+                    padding: 0
+                    padding-left: 1.5em
+                    padding-bottom: 3em
+                    gap: 0.1em
 
-                &_body
-                    gap: 0.4em
-
+                    &__item
+                        margin: 0
 
 
         &_break
@@ -148,5 +143,6 @@
             padding: 2em
 
             &__title
-                font-size: 1.8em
-                margin-bottom: 1em
+                text-align: left
+                // font-size: 1.8em
+                // margin-bottom: 1em

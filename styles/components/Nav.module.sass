@@ -1,7 +1,9 @@
 @use '../variables' as *
     
 .nav 
+    position: block
     width: 100%
+    height: 100%
     display: flex
     justify-content: space-between
     align-items: center
@@ -16,11 +18,11 @@
         font-weight: 300
 
         &::before 
+            @include before-height
             position: absolute
             content: ''
             bottom: 0
             width: 100%
-            height: 1px
             background-color: black
             transition: transform 200ms
             transform: scaleX(0)
@@ -31,39 +33,6 @@
         &:active
             color: $that-red-one
 
-@media screen and ( min-width: $tablet )
-    
-    .nav 
-        position: block
-        width: 100%
-        height: 100%
-        display: flex
-        justify-content: space-between
-        align-items: center
-        font-size: 1em
-            
-        & *    
-            color: black
-
-        &_item 
-            position: relative
-            font-size: 1em
-            font-weight: 300
-
-            &::before 
-                position: absolute
-                content: ''
-                bottom: 0
-                width: 100%
-                height: 1px
-                background-color: black
-                transition: transform 200ms
-                transform: scaleX(0)
-
-            &:hover::before 
-                transform: scaleX(1)
-
-            &:active
                 color: $that-red-one
 
 @media screen and ( max-width: $tablet )

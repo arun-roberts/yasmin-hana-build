@@ -33,11 +33,14 @@ const Pleasure = () => {
                     </figure>
                     <div className={styles.together_item_text}>
                         <h2 className={styles.together_item_text__title}>The Intimate</h2>
-                        <ul className={styles.together_item_text_priceList}>
-                            <li className={styles.together_item_text_priceList__time}>1 hour: <span className={styles.together_item_text_priceList__price}>$600</span></li>
-                            <li className={styles.together_item_text_priceList__time}>2 hours: <span className={styles.together_item_text_priceList__price}>$1100</span></li>
-                            <li className={styles.together_item_text_priceList__time}>3 hours: <span className={styles.together_item_text_priceList__price}>$1600</span></li>
-                        </ul>
+                        <dl className={styles.together_item_text_priceList}>
+                            <dt className={styles.together_item_text_priceList__time}>1 hour</dt>
+                            <dd className={styles.together_item_text_priceList__price}>$600</dd>
+                            <dt className={styles.together_item_text_priceList__time}>2 hours</dt>
+                            <dd className={styles.together_item_text_priceList__price}>$1100</dd>
+                            <dt className={styles.together_item_text_priceList__time}>3 hours</dt>
+                            <dd className={styles.together_item_text_priceList__price}>$1600</dd>
+                        </dl>
                         <p className={styles.together_item_text__body}>
                             Time spent together at a 4 or 5 star hotel in the CBD and inner suburbs. Short but sweet, tell me your desires and let’s make the magic happen.
                         </p>
@@ -55,9 +58,9 @@ const Pleasure = () => {
                     <div className={styles.together_item_text}>
                         <h2 className={styles.together_item_text__title}>The Decadent</h2>
                         <dl className={styles.together_item_text_priceList}>
-                            <dt className={styles.together_item_text_priceList__time}>4 hour date</dt>
+                            <dt className={styles.together_item_text_priceList__time}>4 hours</dt>
                             <dd className={styles.together_item_text_priceList__price}>$2000</dd>
-                            <dt className={styles.together_item_text_priceList__time}>6 hour date</dt>
+                            <dt className={styles.together_item_text_priceList__time}>6 hours</dt>
                             <dd className={styles.together_item_text_priceList__price}>$2600</dd>
                         </dl>
                         <p className={styles.together_item_text__body}>

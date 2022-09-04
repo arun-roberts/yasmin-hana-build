@@ -11,7 +11,7 @@
 .touch_text {
   font-size: 1em;
   font-weight: 300;
-  width: 22rem;
+  width: 22em;
   margin: 0 auto;
   margin: 0 auto;
 }
@@ -20,21 +20,32 @@
     font-size: 0.965em;
   }
 }
+@media screen and (min-width: 767px) {
+  .touch_text {
+    width: 40em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .touch_text {
-    width: 56rem;
+    width: 56em;
   }
 }
 .touch_text__title {
   font-size: 1.4em;
   font-weight: 200;
+  margin: 0.5em auto 0.4em;
   text-transform: uppercase;
   margin: 0.6em auto 0.4em;
+}
+@media screen and (min-width: 767px) {
+  .touch_text__title {
+    font-size: 1.6em;
+    margin: 0.8em auto 0.6em;
+  }
 }
 @media screen and (min-width: 1200px) {
   .touch_text__title {
     font-size: 2em;
-    margin: 0.8em auto 0.6em;
   }
 }
 .touch_text__subtitle {
@@ -141,13 +152,19 @@
   .touch_text__title {
     font-size: 1.4em;
     font-weight: 200;
+    margin: 0.5em auto 0.4em;
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 767px) {
+  .touch_text__title {
+    font-size: 1.6em;
+    margin: 0.8em auto 0.6em;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .touch_text__title {
     font-size: 2em;
-    margin: 0.8em auto 0.6em;
   }
 }
 @media screen and (min-width: 1200px) {

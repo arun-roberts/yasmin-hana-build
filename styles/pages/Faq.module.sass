@@ -7,67 +7,19 @@
     padding-top: 3em
     margin: 0 auto
 
-    &__hero
+    &_hero
+        position: relative
         width: 100%
         aspect-ratio: 3/2
-        background-image: url('/assets/Yasmin2.jpg')
-        background-size: contain
-        background-repeat: no-repeat
 
-    &__title
-        @include title
+    &_body
         @include container
-        margin: 0.8em auto
-
-    &_faqs
-        @include container
-        display: grid
-        gap: 1em
-        margin-bottom: 2em
-
-        &_item
-            display: grid
-            gap: 0.8em
-
-            &__q
-                @include subtitle
-
-            &__a
-                @include body
-
-        &__aside
-            font-weight: 300
-            font-style: italic
-
-        &__link
-            color: inherit
-            transition: color 150ms ease
-
-            &:hover
-                color: $that-red-one
-
-@media screen and ( min-width: $desktop-sm )
-    .faq
-        width: 100%
-        height: 100%
-        display: grid
-        padding-top: 3em
-        margin: 0 auto
-
-        &__hero
-            width: 100%
-            aspect-ratio: 3/2
-            background-image: url('/assets/Yasmin2.jpg')
-            background-size: contain
-            background-repeat: no-repeat
 
         &__title
             @include title
-            @include container
             margin: 0.8em auto
 
         &_faqs
-            @include container
             display: grid
             gap: 1em
             margin-bottom: 2em
@@ -87,8 +39,39 @@
                 font-style: italic
 
             &__link
-                color: inherit
+                color: $that-red-one
+                color: $that-red-one
                 transition: color 150ms ease
 
-                &:hover
-                    color: $that-red-one
+@media screen and ( min-width: $desktop-sm )
+    .faq
+        width: 100%
+        height: 100%
+        display: grid
+        padding-top: 3em
+        margin: 0 auto
+
+        &_body
+
+            &__title
+                margin: 0.8em auto
+
+            &_faqs
+                display: grid
+                gap: 1em
+                margin-bottom: 2em
+
+                &_item
+                    display: grid
+                    gap: 0.8em
+
+                &__aside
+                    font-weight: 300
+                    font-style: italic
+
+                &__link
+                    color: black
+                    transition: color 150ms ease
+
+                    &:hover
+                        color: $that-red-one

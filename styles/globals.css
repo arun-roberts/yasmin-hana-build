@@ -59,4 +59,20 @@ svg:hover {
   align-items: center;
   background-color: #ffefe8;
   padding-bottom: 2em;
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 2500px) {
+  body {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 2500px) {
+  body {
+    font-size: 2.2em;
+  }
 }/*# sourceMappingURL=globals.css.map */
