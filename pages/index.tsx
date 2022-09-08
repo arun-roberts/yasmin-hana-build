@@ -3,8 +3,25 @@ import Image from 'next/image'
 import Pleasure from './pleasure'
 import Footer from './components/Footer'
 import styles from '../styles/pages/Home.module.css'
+import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
+    const [ consent, setConsent ] = useState(true)
+    const [ clicked, setClicked ] = useState(false)
+
+    useEffect(() => {
+        const askForIt = localStorage.getItem('consent')
+        console.log(askForIt)
+        if (askForIt === null) {
+            if (clicked) {
+                localStorage.setItem('consent', JSON.stringify(true)) 
+                setConsent(true)
+            } else {
+                setConsent(false)
+            }
+        }
+    }, [clicked])
+
   return (
     <>
         <main className={styles.home}>
@@ -65,6 +82,15 @@ const Home: NextPage = () => {
             </section>
         </main>
         <Footer />
+        {!consent && 
+            <div className={styles.home_consent}>
+                <section className={styles.home_consent_popup}>
+                    <h2 className={styles.home_consent_popup__title}>This is a page for adults.</h2>
+                    <p className={styles.home_consent_popup__exp}>You must be over the age of 18 to enter.</p>
+                    <button className={styles.home_consent_popup__button} onClick={() => setClicked(true)}>I understand</button>
+                </section>
+            </div>
+        }
     </>
   )
 }
