@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
     const [ consent, setConsent ] = useState(true)
+    const [ fadeout, setFadeout ] = useState(false)
     const [ clicked, setClicked ] = useState(false)
 
     useEffect(() => {
@@ -16,11 +17,20 @@ const Home: NextPage = () => {
             if (clicked) {
                 localStorage.setItem('consent', JSON.stringify(true)) 
                 setConsent(true)
+                document.body.classList.remove('stop-scrolling')
             } else {
                 setConsent(false)
+                document.body.classList.add('stop-scrolling')
             }
         }
     }, [clicked])
+
+    const getClicked = () => {
+        setFadeout(true)
+        setTimeout(() => {
+            setClicked(true)
+        }, 920)
+    }
 
   return (
     <>
@@ -83,11 +93,13 @@ const Home: NextPage = () => {
         </main>
         <Footer />
         {!consent && 
-            <div className={styles.home_consent}>
+            <div className={fadeout ? `${styles.home_consent} ${styles.home_consent___fadeout}` : `${styles.home_consent}`}>
                 <section className={styles.home_consent_popup}>
-                    <h2 className={styles.home_consent_popup__title}>This is a page for adults.</h2>
-                    <p className={styles.home_consent_popup__exp}>You must be over the age of 18 to enter.</p>
-                    <button className={styles.home_consent_popup__button} onClick={() => setClicked(true)}>I understand</button>
+                    <div className={styles.home_consent_popup_content}>
+                        <h2 className={styles.home_consent_popup_content__title}>This is a page for adults.</h2>
+                        <p className={styles.home_consent_popup_content__exp}>You must be over the age of 18 to enter.</p>
+                        <button className={styles.home_consent_popup_content__button} onClick={getClicked}>I understand</button>
+                    </div>
                 </section>
             </div>
         }
