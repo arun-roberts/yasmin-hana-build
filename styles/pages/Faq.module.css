@@ -43,12 +43,12 @@
 }
 .faq_body_faqs {
   display: grid;
-  gap: 1em;
+  gap: 1.6em;
   margin-bottom: 2em;
 }
 .faq_body_faqs_item {
   display: grid;
-  gap: 0.8em;
+  gap: 0.4em;
 }
 .faq_body_faqs_item__q {
   font-size: 1.1em;
@@ -75,7 +75,6 @@
 }
 .faq_body_faqs__link {
   color: rgba(200, 30, 5, 0.8);
-  color: rgba(200, 30, 5, 0.8);
   transition: color 150ms ease;
 }
 
@@ -92,12 +91,12 @@
   }
   .faq_body_faqs {
     display: grid;
-    gap: 1em;
+    gap: 2em;
     margin-bottom: 2em;
   }
   .faq_body_faqs_item {
     display: grid;
-    gap: 0.8em;
+    gap: 0.6em;
   }
   .faq_body_faqs__aside {
     font-weight: 300;

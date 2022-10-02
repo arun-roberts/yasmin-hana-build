@@ -52,6 +52,7 @@
   font-size: 1.1em;
   font-weight: 300;
   text-transform: uppercase;
+  text-transform: none;
 }
 @media screen and (min-width: 1200px) {
   .touch_text__subtitle {
@@ -60,6 +61,7 @@
 }
 .touch_text__dont {
   font-style: italic;
+  margin-top: 0.5em;
 }
 .touch_text_links {
   margin-top: 1.4em;
@@ -79,13 +81,14 @@
   margin: 0.8em 0;
 }
 .touch_text_details__instruct {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 300;
   text-transform: uppercase;
+  text-transform: none;
 }
 @media screen and (min-width: 1200px) {
   .touch_text_details__instruct {
-    font-size: 0.965em;
+    font-size: 1.4em;
   }
 }
 .touch_text_details_list {
@@ -106,13 +109,14 @@
   margin: 0.8em 0;
 }
 .touch_text_example__instruct {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 300;
   text-transform: uppercase;
+  text-transform: none;
 }
 @media screen and (min-width: 1200px) {
   .touch_text_example__instruct {
-    font-size: 0.965em;
+    font-size: 1.4em;
   }
 }
 .touch_text_example_list {
@@ -121,9 +125,10 @@
   margin-top: 0.6em;
 }
 .touch_text_example_list__item span {
-  text-transform: uppercase;
+  position: relative;
   font-weight: 200;
-  color: rgba(200, 30, 5, 0.8);
+  font-style: italic;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1200px) {
@@ -168,20 +173,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .touch_text__subtitle {
-    font-size: 1.1em;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .touch_text__subtitle {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1200px) {
   .touch_text__dont {
     font-style: italic;
+    margin-top: 0.8em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -205,18 +199,8 @@
     margin: 0.8em 0;
   }
   .touch_text_details__instruct {
-    font-size: 1.1em;
-    font-weight: 300;
-    text-transform: uppercase;
     font-size: 1.2em;
   }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .touch_text_details__instruct {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1200px) {
   .touch_text_details_list {
     display: grid;
     gap: 0.5em;
@@ -237,26 +221,11 @@
     margin: 0.8em 0;
   }
   .touch_text_example__instruct {
-    font-size: 1.1em;
-    font-weight: 300;
-    text-transform: uppercase;
     font-size: 1.2em;
   }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .touch_text_example__instruct {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1200px) {
   .touch_text_example_list {
     display: grid;
     gap: 0.5em;
     margin-top: 0.6em;
-  }
-  .touch_text_example_list__item span {
-    text-transform: uppercase;
-    font-weight: 400;
-    color: rgba(200, 30, 5, 0.8);
   }
 }/*# sourceMappingURL=Touch.module.css.map */

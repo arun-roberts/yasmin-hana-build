@@ -76,9 +76,15 @@
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-.together_aside__item {
+.together_aside_item {
   font-weight: 200;
   font-style: italic;
+}
+.together_aside_item__link {
+  transition: color 150ms ease;
+}
+.together_aside_item__link:hover {
+  color: rgba(200, 30, 5, 0.8);
 }
 
 @media screen and (min-width: 1200px) {

@@ -68,9 +68,15 @@
         margin-top: 1.5em
         margin-bottom: 1.5em
 
-        &__item
+        &_item
             font-weight: 200
             font-style: italic
+
+            &__link
+                transition: color 150ms ease
+
+                &:hover
+                    color: $that-red-one
 
 @media screen and ( min-width: $desktop-sm )
     

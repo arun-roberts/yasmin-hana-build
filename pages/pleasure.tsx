@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/pages/Together.module.css'
+import Link from 'next/link'
 
 const Pleasure = () => {
     return (
@@ -121,10 +122,10 @@ const Pleasure = () => {
                     </div>
                 </section>
                 <ul className={styles.together_aside}>
-                    <li className={styles.together_aside__item}>
-                        Weekends away, adventures, travel companion - please contact me to discuss and arrange.
+                    <li className={styles.together_aside_item}>
+                        Weekends away, adventures, travel companion - please <Link href='/touch'><a className={styles.together_aside_item__link}>Get In Touch</a></Link> to discuss and arrange.
                     </li>
-                    <li className={styles.together_aside__item}>
+                    <li className={styles.together_aside_item}>
                         The above rates are inclusive of travel within a 5km radius of the CBD.
                     </li>
                 </ul>

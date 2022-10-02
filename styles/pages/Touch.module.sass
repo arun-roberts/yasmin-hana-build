@@ -21,9 +21,11 @@
 
         &__subtitle
             @include subtitle
+            text-transform: none
 
         &__dont
             font-style: italic
+            margin-top: 0.5em
 
         &_links
             margin-top: 1.4em 
@@ -43,8 +45,8 @@
             margin: 0.8em 0
 
             &__instruct
-                @include body
-                text-transform: uppercase
+                @include subtitle
+                text-transform: none
 
             &_list
                 display: grid
@@ -64,8 +66,8 @@
             margin: 0.8em 0
 
             &__instruct
-                @include body
-                text-transform: uppercase
+                @include subtitle
+                text-transform: none
 
             &_list
                 display: grid
@@ -73,9 +75,10 @@
                 margin-top: 0.6em
 
                 &__item span
-                    text-transform: uppercase
+                    position: relative
                     font-weight: 200
-                    color: $that-red-one
+                    font-style: italic
+                    text-decoration: underline
 
 @media screen and ( min-width: $desktop-sm  )
     
@@ -97,11 +100,9 @@
                 @include title
                 text-transform: uppercase
 
-            &__subtitle
-                @include subtitle
-
             &__dont
                 font-style: italic
+                margin-top: 0.8em
 
             &_links
                 margin-top: 1.4em 
@@ -121,7 +122,6 @@
                 margin: 0.8em 0
 
                 &__instruct
-                    @include subtitle
                     font-size: 1.2em
 
                 &_list
@@ -142,16 +142,9 @@
                 margin: 0.8em 0
 
                 &__instruct
-                    @include subtitle
                     font-size: 1.2em
 
                 &_list
                     display: grid
                     gap: 0.5em
                     margin-top: 0.6em
-
-                    &__item span
-                        text-transform: uppercase
-                        // font-style: italic
-                        font-weight: 400
-                        color: $that-red-one
