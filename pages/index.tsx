@@ -3,12 +3,16 @@ import Image from 'next/image'
 import Pleasure from './pleasure'
 import Footer from './components/Footer'
 import styles from '../styles/pages/Home.module.css'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import AppContext from '../lib/context'
+
 
 const Home: NextPage = () => {
     const [ consent, setConsent ] = useState(true)
     const [ fadeout, setFadeout ] = useState(false)
     const [ clicked, setClicked ] = useState(false)
+    const value = useContext(AppContext)
+    const { device }: { device: String } = value.state
 
     useEffect(() => {
         const askForIt = localStorage.getItem('consent')
@@ -38,7 +42,7 @@ const Home: NextPage = () => {
             <figure className={styles.home_hero}>
                 <Image 
                     className={styles.home_hero__image}
-                    src='/assets/Yasmin3.jpg'
+                    src={`/assets/${device}/Y003.jpg`}
                     layout='fill'
                     objectFit='cover'
                     alt='Yasmin'
@@ -52,7 +56,7 @@ const Home: NextPage = () => {
                     <figure className={styles.home_about_content_figure}>
                         <Image 
                             className={styles.home_about_content_figure__image}
-                            src='/assets/Yasmin4.jpg'
+                            src={`/assets/${device}/Y004.jpg`}
                             layout='fill'
                             objectFit='cover'
                             alt='Yasmin'
@@ -80,7 +84,7 @@ const Home: NextPage = () => {
             <figure className={styles.home_break}>
                 <Image 
                     className={styles.home_break__image}
-                    src='/assets/Yasmin1.jpg'
+                    src={`/assets/${device}/Y001.jpg`}
                     layout='fill'
                     objectFit='cover'
                     alt='Yasmin'

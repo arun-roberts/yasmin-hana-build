@@ -35,7 +35,6 @@
 }
 .nav_item:active {
   color: rgba(200, 30, 5, 0.8);
-  color-color: rgba(200, 30, 5, 0.8);
 }
 
 @media screen and (max-width: 767px) {

@@ -68,7 +68,7 @@
         inset: 0
         justify-content: center
         align-items: center
-        background-image: url('/assets/Yasmin9.jpg')
+        background-image: url('/assets/mobile/Y009.jpg')
         background-size: cover
         background-position: center
         overflow: hidden
@@ -140,20 +140,24 @@
                 // font-size: 1.8em
                 // margin-bottom: 1em
 
-        &_consent_popup
-            width: 100%
-            height: 12em
 
-            &_content
+        &_consent
+            background-image: url('/assets/tablet/Y009.jpg')
 
-                &__title
-                    font-size: 1.7em
+            &_popup
+                width: 100%
+                height: 12em
 
-                &__exp
-                    margin-bottom: 2em
+                &_content
 
-                &__button
-                    margin-bottom: 1.2em
+                    &__title
+                        font-size: 1.7em
+
+                    &__exp
+                        margin-bottom: 2em
+
+                    &__button
+                        margin-bottom: 1.2em
         
 @media screen and ( min-width: $desktop-sm )
     .home
@@ -203,34 +207,37 @@
                 // font-size: 1.8em
                 // margin-bottom: 1em
 
-        &_consent_popup
-            width: 100%
-            height: 16em
+        &_consent
+            background-image: url('/assets/desktop-sm/Y009.jpg')
 
-            &_content
+            &_popup
+                width: 100%
+                height: 16em
 
-                &__title
-                    font-size: 2.4em
-                    margin-bottom: 0.18em
+                &_content
 
-                &__exp
-                    font-size: 1.2em
-                    margin-bottom: 2.4em
+                    &__title
+                        font-size: 2.4em
+                        margin-bottom: 0.18em
 
-                &__button
-                    position: relative
-                    margin-bottom: 0.8em
+                    &__exp
+                        font-size: 1.2em
+                        margin-bottom: 2.4em
 
-                    &::after
-                        content: ''
-                        position: absolute
-                        width: 100%
-                        bottom: 0
-                        left: 0
-                        height: 0.07em
-                        scale: 0 1
-                        background-color: $that-red-one
-                        transition: all 250ms ease
+                    &__button
+                        position: relative
+                        margin-bottom: 0.8em
 
-                    &:hover:after
-                        scale: 1 1 
+                        &::after
+                            content: ''
+                            position: absolute
+                            width: 100%
+                            bottom: 0
+                            left: 0
+                            height: 0.07em
+                            scale: 0 1
+                            background-color: $that-red-one
+                            transition: all 250ms ease
+
+                        &:hover:after
+                            scale: 1 1 

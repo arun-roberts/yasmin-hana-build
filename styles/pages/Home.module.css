@@ -112,7 +112,7 @@
   inset: 0;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/Yasmin9.jpg");
+  background-image: url("/assets/mobile/Y009.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -176,6 +176,9 @@
     margin: 0 auto;
     padding-bottom: 1em;
   }
+  .home_consent {
+    background-image: url("/assets/tablet/Y009.jpg");
+  }
   .home_consent_popup {
     width: 100%;
     height: 12em;
@@ -222,6 +225,9 @@
   }
   .home_menu__title {
     text-align: left;
+  }
+  .home_consent {
+    background-image: url("/assets/desktop-sm/Y009.jpg");
   }
   .home_consent_popup {
     width: 100%;

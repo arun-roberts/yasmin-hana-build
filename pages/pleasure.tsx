@@ -1,15 +1,20 @@
 import Image from 'next/image'
 import styles from '../styles/pages/Together.module.css'
 import Link from 'next/link'
+import { useContext } from 'react'
+import AppContext from '../lib/context'
+
 
 const Pleasure = () => {
+    const value = useContext(AppContext)
+    const { device }: { device: String } = value.state
     return (
         <>
             <article className={styles.together}>
                 <section className={styles.together_item}>
                     <figure className={styles.together_item__image}>
                         <Image
-                            src='/assets/Yasmin7.jpg'
+                            src={`/assets/${device}/Y007.jpg`}
                             layout='fill'
                             objectFit='cover'
                             alt='Yasmin'
@@ -26,7 +31,7 @@ const Pleasure = () => {
                 <section className={styles.together_item}>
                     <figure className={styles.together_item__image}>
                         <Image
-                            src='/assets/Yasmin6.jpg'
+                            src={`/assets/${device}/Y006.jpg`}
                             layout='fill'
                             objectFit='cover'
                             alt='Yasmin'
