@@ -55,7 +55,7 @@ const Pleasure = () => {
                 <section className={styles.together_item}>
                     <figure className={styles.together_item__image}>
                         <Image
-                            src='/assets/Yasmin8.jpg'
+                            src={`/assets/${device}/Y008.jpg`}
                             layout='fill'
                             objectFit='cover'
                             alt='Yasmin'
@@ -77,7 +77,7 @@ const Pleasure = () => {
                 <section className={styles.together_item}>
                     <figure className={styles.together_item__image}>
                         <Image
-                            src='/assets/Yasmin11.jpg'
+                            src={`/assets/${device}/Y011.jpg`}
                             layout='fill'
                             objectFit='cover'
                             alt='Yasmin'
@@ -105,7 +105,7 @@ const Pleasure = () => {
                 <section className={styles.together_item}>
                     <figure className={styles.together_item__image}>
                         <Image
-                            src='/assets/Yasmin4.jpg'
+                            src={`/assets/${device}/Y004.jpg`}
                             layout='fill'
                             objectFit='cover'
                             alt='Yasmin'
