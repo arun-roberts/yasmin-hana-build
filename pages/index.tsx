@@ -90,23 +90,12 @@ const Home: NextPage = () => {
                     alt='Yasmin'
                 />
             </figure>
-            <section className={styles.home_menu}>
+            <section id='pleasure-menu' className={styles.home_menu}>
                 <h2 className={styles.home_menu__title}>Pleasure menu</h2>
                 <Pleasure />
             </section>
         </main>
         <Footer />
-        {!consent && 
-            <div className={fadeout ? `${styles.home_consent} ${styles.home_consent___fadeout}` : `${styles.home_consent}`}>
-                <section className={styles.home_consent_popup}>
-                    <div className={styles.home_consent_popup_content}>
-                        <h2 className={styles.home_consent_popup_content__title}>This is a page for adults.</h2>
-                        <p className={styles.home_consent_popup_content__exp}>You must be over the age of 18 to enter.</p>
-                        <button className={styles.home_consent_popup_content__button} onClick={getClicked}>I understand</button>
-                    </div>
-                </section>
-            </div>
-        }
     </>
   )
 }

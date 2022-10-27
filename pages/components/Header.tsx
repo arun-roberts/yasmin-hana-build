@@ -7,9 +7,9 @@ const Header = () => {
     const [ dropDown, setDropDown ] = useState(false)
     return (
         <header className={styles.header}>
-            <Link href='/'>
-                <a className={styles.header__title}>YASMIN HANA</a>
-            </Link>
+            <h2 className={styles.header__title}>
+                YASMIN HANA
+            </h2>
             <div 
                 className={dropDown ? `${styles.header__nav} ${styles.header__nav___open}` : `${styles.header__nav}`}
                 onClick={() => setDropDown(false)} 

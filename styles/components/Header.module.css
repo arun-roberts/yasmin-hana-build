@@ -13,10 +13,7 @@
   position: relative;
   font-size: 1.5em;
   color: black;
-  transition: color 150ms ease;
-}
-.header__title:hover {
-  color: rgba(200, 30, 5, 0.8);
+  font-weight: 300;
 }
 .header__nav {
   position: block;
@@ -46,14 +43,10 @@
     position: relative;
     font-size: 1.5em;
     color: black;
-    transition: color 150ms ease;
-  }
-  .header__title:hover {
-    color: rgba(200, 30, 5, 0.8);
   }
   .header__nav {
     position: block;
-    width: 40%;
+    width: 30%;
     height: 100%;
     color: black;
     display: flex;

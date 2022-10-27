@@ -42,13 +42,15 @@ const Pleasure = () => {
                         <dl className={styles.together_item_text_priceList}>
                             <dt className={styles.together_item_text_priceList__time}>1 hour</dt>
                             <dd className={styles.together_item_text_priceList__price}>$600</dd>
+                            <dt className={styles.together_item_text_priceList__time}>1.5 hours</dt>
+                            <dd className={styles.together_item_text_priceList__price}>$800</dd>
                             <dt className={styles.together_item_text_priceList__time}>2 hours</dt>
                             <dd className={styles.together_item_text_priceList__price}>$1100</dd>
                             <dt className={styles.together_item_text_priceList__time}>3 hours</dt>
                             <dd className={styles.together_item_text_priceList__price}>$1600</dd>
                         </dl>
                         <p className={styles.together_item_text__body}>
-                            Time spent together at a 4 or 5 star hotel in the CBD and inner suburbs. Short but sweet, tell me your desires and let’s make the magic happen.
+                            Time spent together at my incall location or at a 4-5 star hotel in the CBD and inner suburbs. Short but sweet, tell me your desires and let’s make the magic happen.
                         </p>
                     </div>
                 </section>
@@ -65,9 +67,9 @@ const Pleasure = () => {
                         <h2 className={styles.together_item_text__title}>The Decadent</h2>
                         <dl className={styles.together_item_text_priceList}>
                             <dt className={styles.together_item_text_priceList__time}>4 hours</dt>
-                            <dd className={styles.together_item_text_priceList__price}>$2000</dd>
+                            <dd className={styles.together_item_text_priceList__price}>$1800</dd>
                             <dt className={styles.together_item_text_priceList__time}>6 hours</dt>
-                            <dd className={styles.together_item_text_priceList__price}>$2600</dd>
+                            <dd className={styles.together_item_text_priceList__price}>$2400</dd>
                         </dl>
                         <p className={styles.together_item_text__body}>
                             The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. Get in touch and based on our mutual interests, together we’ll work out the perfect date.
@@ -87,9 +89,9 @@ const Pleasure = () => {
                         <h2 className={styles.together_item_text__title}>The Foodie</h2>
                         <dl className={styles.together_item_text_priceList}>
                             <dt className={styles.together_item_text_priceList__time}>4 hours</dt>
-                            <dd className={styles.together_item_text_priceList__price}>$2400</dd>
+                            <dd className={styles.together_item_text_priceList__price}>$2300</dd>
                             <dt className={styles.together_item_text_priceList__time}>6 hours</dt>
-                            <dd className={styles.together_item_text_priceList__price}>$2800</dd>
+                            <dd className={styles.together_item_text_priceList__price}>$2700</dd>
                         </dl>
                         <p className={styles.together_item_text__body}>
                             Cooking and sharing a home cooked meal are two of the greatest pleasures in life. For  half of our session, I’ll be in the kitchen whipping up a meal for the two of us to enjoy while you sit back, relax and sip on a glass of whiskey. Or perhaps you’d like to join me in the kitchen?
@@ -118,7 +120,7 @@ const Pleasure = () => {
                                 15 hours with a minimum of 7 hours of sleep
                             </dd>
                             <dt className={styles.together_item_text_priceList__price}>
-                                $4000
+                                $3800
                             </dt>
                         </dl>
                         <p className={styles.together_item_text__body}>

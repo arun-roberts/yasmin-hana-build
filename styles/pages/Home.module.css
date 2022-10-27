@@ -104,52 +104,6 @@
     font-size: 2em;
   }
 }
-.home_consent {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/assets/mobile/Y009.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  transition: opacity 900ms ease-out;
-  z-index: 4000;
-}
-.home_consent_popup {
-  width: 20em;
-  height: 20em;
-  background-color: rgba(255, 239, 232, 0.9019607843);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.home_consent_popup_content {
-  text-align: center;
-}
-.home_consent_popup_content__title {
-  font-weight: 200;
-  font-size: 1.5em;
-  margin-bottom: 0.3em;
-}
-.home_consent_popup_content__exp {
-  margin-bottom: 4em;
-}
-.home_consent_popup_content__button {
-  border: none;
-  background-color: transparent;
-  color: rgba(200, 30, 5, 0.8);
-  text-transform: uppercase;
-  font-size: 1.8em;
-  font-weight: 200;
-  cursor: pointer;
-}
-.home_consent___fadeout {
-  opacity: 0;
-}
 
 @media screen and (min-width: 767px) {
   .home {
@@ -175,22 +129,6 @@
   .home_menu {
     margin: 0 auto;
     padding-bottom: 1em;
-  }
-  .home_consent {
-    background-image: url("/assets/tablet/Y009.jpg");
-  }
-  .home_consent_popup {
-    width: 100%;
-    height: 12em;
-  }
-  .home_consent_popup_content__title {
-    font-size: 1.7em;
-  }
-  .home_consent_popup_content__exp {
-    margin-bottom: 2em;
-  }
-  .home_consent_popup_content__button {
-    margin-bottom: 1.2em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -225,38 +163,5 @@
   }
   .home_menu__title {
     text-align: left;
-  }
-  .home_consent {
-    background-image: url("/assets/desktop-sm/Y009.jpg");
-  }
-  .home_consent_popup {
-    width: 100%;
-    height: 16em;
-  }
-  .home_consent_popup_content__title {
-    font-size: 2.4em;
-    margin-bottom: 0.18em;
-  }
-  .home_consent_popup_content__exp {
-    font-size: 1.2em;
-    margin-bottom: 2.4em;
-  }
-  .home_consent_popup_content__button {
-    position: relative;
-    margin-bottom: 0.8em;
-  }
-  .home_consent_popup_content__button::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 0.07em;
-    scale: 0 1;
-    background-color: rgba(200, 30, 5, 0.8);
-    transition: all 250ms ease;
-  }
-  .home_consent_popup_content__button:hover:after {
-    scale: 1 1;
   }
 }/*# sourceMappingURL=Home.module.css.map */

@@ -24,10 +24,10 @@ const Touch = () => {
                 <section className={styles.touch_text}>
                     <h1 className={styles.touch_text__title}>Get in touch</h1>
                     <h2 className={styles.touch_text__subtitle}>
-                        Whether you already know what you’re looking for or you have some questions, you can contact me and we’ll take it from there.
+                        Whether you already know what you’re looking for or you still have some questions, you can email or text me and we’ll take it from there.
                     </h2>
                     <p className={styles.touch_text__dont}>
-                        Please email or text me (SMS and Whatsapp). I do not answer unscheduled phone calls.
+                        Please keep in mind that I do not answer unscheduled phone calls.
                     </p>
                     <ul className={styles.touch_text_links}>
                         <li className={styles.touch_text_links__link}>
@@ -38,7 +38,7 @@ const Touch = () => {
                         </li>
                         <li className={styles.touch_text_links__link}>
                             Phone: 
-                            <Link href='tel:+61457894685'>
+                            <Link href='sms://61457894685;'>
                                 <a> +61 457 894 685 (text only)</a>
                             </Link>
                         </li>
@@ -48,7 +48,7 @@ const Touch = () => {
                         <ul className={styles.touch_text_details_list}>
                             <li className={styles.touch_text_details_list__item}>Your name.</li>
                             <li className={styles.touch_text_details_list__item}>Duration and service.</li>
-                            <li className={styles.touch_text_details_list__item}>Your location.</li>
+                            <li className={styles.touch_text_details_list__item}>Incall or your location.</li>
                             <li className={styles.touch_text_details_list__item}>Preferred date(s) and time(s).</li>
                             <li className={styles.touch_text_details_list__item}>
                                 Any details, ideas or specific things that you’d like to include in our time together. You don’t have to know what you’re looking for. We can work that out together and create an experience tailored to your personal desires.
@@ -66,12 +66,17 @@ const Touch = () => {
                                 My name is <span>your name</span>, I’m located at <span>your location</span>.
                             </li> 
                             <li className={styles.touch_text_example_list__item}>
-                                I would like to organise a <span>duration and kind of service</span> session with you on <span>preferred date</span> at <span>preferred time</span>.
+                                I would like to organise a <span>kind of service and duration</span> session with you on <span>preferred date</span> at <span>preferred time</span>.
                             </li> 
                             <li className={styles.touch_text_example_list__item}>
                                 <span>Any details / specific requests / interests / kinks / questions</span>
                             </li>
                         </ul>    
+                        <Link 
+                            href='sms://61457894685;?&body=Hi%20Yasmin,%20My%20name%20is%20*your%20name*,%20I’m%20located%20at%20*your%20location*.%20I%20would%20like%20to%20organise%20a%20*kind%20of%20service%20and%20duration*%20session%20with%20you%20on%20*preferred%20date*%20at%20*preferred%20time*.%20*Any%20details/%20specific%20requests/%20interests%20/%20kinks%20/%20questions*.'
+                        >
+                            <a className={styles.touch_text_example__link}>Send me a text using this template.</a>
+                        </Link>
                     </div>
                 </section>
             </main>

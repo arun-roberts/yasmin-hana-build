@@ -67,15 +67,23 @@
   margin-top: 1.4em;
 }
 .touch_text_links__link {
+  font-size: 1.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-transform: none;
   transition: color 250ms ease;
   margin-bottom: 0.6em;
-  font-size: 1.1em;
+}
+@media screen and (min-width: 1200px) {
+  .touch_text_links__link {
+    font-size: 1.4em;
+  }
 }
 .touch_text_links__link * {
-  color: black;
+  color: rgba(200, 30, 5, 0.8);
 }
 .touch_text_links__link *:hover {
-  color: rgba(200, 30, 5, 0.8);
+  color: black;
 }
 .touch_text_details {
   margin: 0.8em 0;
@@ -126,9 +134,15 @@
 }
 .touch_text_example_list__item span {
   position: relative;
-  font-weight: 200;
   font-style: italic;
   text-decoration: underline;
+}
+.touch_text_example__link {
+  transition: color 150ms ease;
+  color: rgba(200, 30, 5, 0.8);
+}
+.touch_text_example__link:hover {
+  color: black;
 }
 
 @media screen and (min-width: 1200px) {
@@ -154,25 +168,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .touch_text__title {
-    font-size: 1.4em;
-    font-weight: 200;
-    margin: 0.5em auto 0.4em;
-    text-transform: uppercase;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 767px) {
-  .touch_text__title {
-    font-size: 1.6em;
-    margin: 0.8em auto 0.6em;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .touch_text__title {
-    font-size: 2em;
-  }
-}
-@media screen and (min-width: 1200px) {
   .touch_text__dont {
     font-style: italic;
     margin-top: 0.8em;
@@ -185,13 +180,7 @@
   .touch_text_links__link {
     transition: color 250ms ease;
     margin-bottom: 0.6em;
-    font-size: 1.1em;
-  }
-  .touch_text_links__link * {
-    color: black;
-  }
-  .touch_text_links__link *:hover {
-    color: rgba(200, 30, 5, 0.8);
+    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -227,5 +216,19 @@
     display: grid;
     gap: 0.5em;
     margin-top: 0.6em;
+    margin-bottom: 1.5em;
+  }
+  .touch_text_example__link {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-transform: none;
+    font-style: italic;
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .touch_text_example__link {
+    font-size: 1.4em;
   }
 }/*# sourceMappingURL=Touch.module.css.map */

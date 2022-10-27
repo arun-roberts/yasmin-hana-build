@@ -19,11 +19,6 @@ const Nav = () => {
                     <a className={styles.nav_item__text}>FAQs</a>
                 </Link>
             </li>
-            <li className={styles.nav_item}>
-                <Link  href='/spoil-me'>
-                    <a className={styles.nav_item__text}>SPOIL ME</a>
-                </Link>
-            </li>
         </menu>
     )
 }
