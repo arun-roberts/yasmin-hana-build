@@ -3,15 +3,11 @@ import Image from 'next/image'
 import Pleasure from './pleasure'
 import Footer from './components/Footer'
 import styles from '../styles/pages/Home.module.css'
-import { useContext } from 'react'
-import AppContext from '../lib/context'
-import Y003 from '../public/assets/desktop-sm/Y003.jpg'
 import Y001 from '../public/assets/desktop-sm/Y001.jpg'
+import Y003 from '../public/assets/desktop-sm/Y003.jpg'
 import Y004 from '../public/assets/desktop-sm/Y004.jpg'
 
 const Home: NextPage = () => {
-    const value = useContext(AppContext)
-    // const { device }: { device: String } = value.state
 
   return (
     <>
@@ -21,6 +17,7 @@ const Home: NextPage = () => {
                     className={styles.home_hero__image}
                     src={Y003}
                     sizes='100vw'
+                    fill
                     alt='Yasmin'
                 />
             </figure>
@@ -62,6 +59,7 @@ const Home: NextPage = () => {
                     className={styles.home_break__image}
                     src={Y001}
                     sizes='100vw'
+                    fill
                     alt='Yasmin'
                 />
             </figure>

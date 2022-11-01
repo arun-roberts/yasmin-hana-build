@@ -2,21 +2,17 @@ import Link from "next/link"
 import Image from "next/image"
 import Footer from "./components/Footer"
 import styles from '../styles/pages/Touch.module.css'
-import { useContext } from 'react'
-import AppContext from '../lib/context'
+import Y005 from '../public/assets/desktop-sm/Y005.jpg'
 
 const Touch = () => {
-    const value = useContext(AppContext)
-    const { device }: { device: String } = value.state
-    
     return <>
         <main className={styles.touch}>
             <figure className={styles.touch_hero}>
                 <Image 
                     className={styles.touch_hero__image}
-                    src={`/assets/${device}/Y005.jpg`}
-                    layout='fill'
-                    objectFit='cover'
+                    src={Y005}
+                    sizes='100vw'
+                    fill
                     alt='Yasmin'
                 />
             </figure>

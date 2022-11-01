@@ -1,19 +1,15 @@
 import Image from 'next/image'
 import styles from '../styles/pages/Together.module.css'
 import Link from 'next/link'
-import { useContext } from 'react'
-import AppContext from '../lib/context'
-import Y007 from '../public/assets/desktop-sm/Y007.jpg'
+import Y004 from '../public/assets/desktop-sm/Y004.jpg'
 import Y006 from '../public/assets/desktop-sm/Y006.jpg'
+import Y007 from '../public/assets/desktop-sm/Y007.jpg'
 import Y008 from '../public/assets/desktop-sm/Y008.jpg'
 import Y011 from '../public/assets/desktop-sm/Y011.jpg'
-import Y004 from '../public/assets/desktop-sm/Y004.jpg'
 
 
 
 const Pleasure = () => {
-    const value = useContext(AppContext)
-    const { device }: { device: String } = value.state
     return <>
         <article className={styles.together}>
             <section className={styles.together_item}>

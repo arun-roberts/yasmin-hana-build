@@ -2,20 +2,17 @@ import styles from '../styles/pages/Faq.module.css'
 import Footer from './components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useContext } from 'react'
-import AppContext from '../lib/context'
+import Y002 from '../public/assets/desktop-sm/Y002.jpg'
 
 const Faq = () => {
-    const value = useContext(AppContext)
-    const { device }: { device: String } = value.state
     return <>
         <main className={styles.faq}>
             <figure className={styles.faq_hero}>
                 <Image 
                     className={styles.faq_hero__image}
-                    src={`/assets/${device}/Y002.jpg`}
-                    layout='fill'
-                    objectFit='cover'
+                    src={Y002}
+                    sizes='100vw'
+                    fill
                     alt='Yasmin'
                 />
             </figure>

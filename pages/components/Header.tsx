@@ -1,5 +1,4 @@
 import Nav from './Nav'
-import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/components/Header.module.css'
 
