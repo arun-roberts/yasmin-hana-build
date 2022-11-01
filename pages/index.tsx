@@ -3,38 +3,15 @@ import Image from 'next/image'
 import Pleasure from './pleasure'
 import Footer from './components/Footer'
 import styles from '../styles/pages/Home.module.css'
-import { useEffect, useState, useContext } from 'react'
+import { useContext } from 'react'
 import AppContext from '../lib/context'
-
+import Y003 from '../public/assets/desktop-sm/Y003.jpg'
+import Y001 from '../public/assets/desktop-sm/Y001.jpg'
+import Y004 from '../public/assets/desktop-sm/Y004.jpg'
 
 const Home: NextPage = () => {
-    const [ consent, setConsent ] = useState(true)
-    const [ fadeout, setFadeout ] = useState(false)
-    const [ clicked, setClicked ] = useState(false)
     const value = useContext(AppContext)
-    const { device }: { device: String } = value.state
-
-    useEffect(() => {
-        const askForIt = localStorage.getItem('consent')
-        console.log(askForIt)
-        if (askForIt === null) {
-            if (clicked) {
-                localStorage.setItem('consent', JSON.stringify(true)) 
-                setConsent(true)
-                document.body.classList.remove('stop-scrolling')
-            } else {
-                setConsent(false)
-                document.body.classList.add('stop-scrolling')
-            }
-        }
-    }, [clicked])
-
-    const getClicked = () => {
-        setFadeout(true)
-        setTimeout(() => {
-            setClicked(true)
-        }, 920)
-    }
+    // const { device }: { device: String } = value.state
 
   return (
     <>
@@ -42,9 +19,8 @@ const Home: NextPage = () => {
             <figure className={styles.home_hero}>
                 <Image 
                     className={styles.home_hero__image}
-                    src={`/assets/${device}/Y003.jpg`}
-                    layout='fill'
-                    objectFit='cover'
+                    src={Y003}
+                    sizes='100vw'
                     alt='Yasmin'
                 />
             </figure>
@@ -56,9 +32,9 @@ const Home: NextPage = () => {
                     <figure className={styles.home_about_content_figure}>
                         <Image 
                             className={styles.home_about_content_figure__image}
-                            src={`/assets/${device}/Y004.jpg`}
-                            layout='fill'
-                            objectFit='cover'
+                            src={Y004}
+                            sizes='100vw'
+                            fill                            
                             alt='Yasmin'
                         />
                     </figure>
@@ -84,9 +60,8 @@ const Home: NextPage = () => {
             <figure className={styles.home_break}>
                 <Image 
                     className={styles.home_break__image}
-                    src={`/assets/${device}/Y001.jpg`}
-                    layout='fill'
-                    objectFit='cover'
+                    src={Y001}
+                    sizes='100vw'
                     alt='Yasmin'
                 />
             </figure>

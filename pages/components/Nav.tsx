@@ -5,22 +5,22 @@ const Nav = () => {
     return (
         <menu className={styles.nav}>
             <li className={styles.nav_item}>
-                <Link href='/'>
-                    <a className={styles.nav_item__text}>HOME</a>
+                <Link href='/' className={styles.nav_item__text}>
+                    HOME
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link href='/touch'>
-                    <a className={styles.nav_item__text}>GET IN TOUCH</a>
+                <Link href='/touch' className={styles.nav_item__text}>
+                    GET IN TOUCH
                 </Link>
             </li>
             <li className={styles.nav_item}>
-                <Link href='/faqs'>
-                    <a className={styles.nav_item__text}>FAQs</a>
+                <Link href='/faqs' className={styles.nav_item__text}>
+                    FAQs
                 </Link>
             </li>
         </menu>
-    )
+    );
 }
 
 export default Nav
