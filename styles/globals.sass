@@ -69,6 +69,8 @@ svg
   background-image: url('/assets/mobile/Y009.jpg')
   background-size: cover
   background-position: center
+  background-color: rgba(0, 0, 0, 0.4)
+  background-blend-mode: darken
   overflow: hidden
   transition: opacity 900ms ease-out
   z-index: 4000
@@ -76,7 +78,7 @@ svg
   &_popup
     width: 20em
     height: 20em
-    background-color: #ffefe8e6
+    color: #ffefe8e6
     display: flex
     flex-direction: column
     justify-content: center
@@ -91,11 +93,12 @@ svg
 
       &__exp
         margin-bottom: 4em
+        font-weight: 200
 
       &__button
         border: none
         background-color: transparent
-        color: $that-red-one
+        color: #d02f16
         text-transform: uppercase
         font-size: 1.8em
         font-weight: 200
@@ -135,11 +138,11 @@ svg
 
         &__title
           font-size: 2.4em
-          margin-bottom: 0.18em
+          margin-bottom: 0.1em
 
         &__exp
           font-size: 1.2em
-          margin-bottom: 2.4em
+          margin-bottom: 1.3em
 
         &__button
           position: relative

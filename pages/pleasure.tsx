@@ -48,9 +48,9 @@ const Pleasure = () => {
                         <dt className={styles.together_item_text_priceList__time}>1.5 hours</dt>
                         <dd className={styles.together_item_text_priceList__price}>$800</dd>
                         <dt className={styles.together_item_text_priceList__time}>2 hours</dt>
-                        <dd className={styles.together_item_text_priceList__price}>$1100</dd>
+                        <dd className={styles.together_item_text_priceList__price}>$1000</dd>
                         <dt className={styles.together_item_text_priceList__time}>3 hours</dt>
-                        <dd className={styles.together_item_text_priceList__price}>$1600</dd>
+                        <dd className={styles.together_item_text_priceList__price}>$1500</dd>
                     </dl>
                     <p className={styles.together_item_text__body}>
                         Time spent together at my incall location or at a 4-5 star hotel in the CBD and inner suburbs. Short but sweet, tell me your desires and let’s make the magic happen.
@@ -76,7 +76,7 @@ const Pleasure = () => {
                         <dd className={styles.together_item_text_priceList__price}>$2400</dd>
                     </dl>
                     <p className={styles.together_item_text__body}>
-                        The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. Get in touch and based on our mutual interests, together we’ll work out the perfect date.
+                        The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. <Link href='/touch'>Get in touch</Link> and based on our mutual interests, together we’ll work out the perfect date.
                     </p>
                 </div>
             </section>
