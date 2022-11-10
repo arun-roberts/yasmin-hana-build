@@ -66,6 +66,10 @@ svg:hover {
   color: black;
 }
 
+.little-space {
+  margin-left: 0.4em;
+}
+
 .footer {
   width: 100%;
   display: flex;

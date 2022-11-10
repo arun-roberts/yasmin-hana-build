@@ -27,13 +27,13 @@ const Touch = () => {
                 <ul className={styles.touch_text_links}>
                     <li className={styles.touch_text_links__link}>
                         Email: 
-                        <Link href='mailto:Yasmin.Hana@protonmail.com'>
+                        <Link className='little-space' href='mailto:Yasmin.Hana@protonmail.com'>
                              yasmin.hana@protonmail.com
                         </Link>
                     </li>
                     <li className={styles.touch_text_links__link}>
                         Phone: 
-                        <Link href='sms://61457894685;'>
+                        <Link className='little-space' href='sms://61457894685;'>
                              +61 457 894 685 (text only)
                         </Link>
                     </li>
