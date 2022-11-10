@@ -58,6 +58,14 @@ svg:hover {
   fill: rgba(200, 30, 5, 0.8);
 }
 
+.red-link {
+  color: rgba(200, 30, 5, 0.8);
+  transition: color 150ms ease;
+}
+.red-link:hover {
+  color: black;
+}
+
 .footer {
   width: 100%;
   display: flex;

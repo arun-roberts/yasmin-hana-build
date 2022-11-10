@@ -12,6 +12,7 @@
 }
 .faq_body {
   width: 22em;
+  width: 84%;
   margin: 0 auto;
 }
 @media screen and (min-width: 767px) {

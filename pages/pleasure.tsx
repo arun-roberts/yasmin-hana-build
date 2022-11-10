@@ -76,7 +76,7 @@ const Pleasure = () => {
                         <dd className={styles.together_item_text_priceList__price}>$2400</dd>
                     </dl>
                     <p className={styles.together_item_text__body}>
-                        The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. <Link href='/touch'>Get in touch</Link> and based on our mutual interests, together we’ll work out the perfect date.
+                        The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. <Link className='red-link' href='/touch'>Get in touch</Link> and based on our mutual interests, together we’ll work out the perfect date.
                     </p>
                 </div>
             </section>
@@ -136,7 +136,7 @@ const Pleasure = () => {
             </section>
             <ul className={styles.together_aside}>
                 <li className={styles.together_aside_item}>
-                    Weekends away, adventures, travel companion - please <Link href='/touch' className={styles.together_aside_item__link}>Get In Touch</Link> to discuss and arrange.
+                    Weekends away, adventures, travel companion - please <Link href='/touch' className='red-link'>get in touch</Link> to discuss and arrange.
                 </li>
                 <li className={styles.together_aside_item}>
                     The above rates are inclusive of travel within a 5km radius of the CBD.
