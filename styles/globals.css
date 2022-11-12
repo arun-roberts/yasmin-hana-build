@@ -75,22 +75,33 @@ svg:hover {
   inset: 0;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/mobile/Y009.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: darken;
   overflow: hidden;
   transition: opacity 900ms ease-out;
   z-index: 4000;
 }
+.consent_background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.consent_background__image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .consent_popup {
-  width: 20em;
-  height: 20em;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   color: rgba(255, 239, 232, 0.9019607843);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  z-index: 4003;
 }
 .consent_popup_content {
   text-align: center;
@@ -118,13 +129,6 @@ svg:hover {
 }
 
 @media screen and (min-width: 767px) {
-  .consent {
-    background-image: url("/assets/tablet/Y009.jpg");
-  }
-  .consent_popup {
-    width: 100%;
-    height: 12em;
-  }
   .consent_popup_content__title {
     font-size: 1.7em;
   }
@@ -136,13 +140,6 @@ svg:hover {
   }
 }
 @media screen and (min-width: 1200px) {
-  .consent {
-    background-image: url("/assets/desktop-sm/Y009.jpg");
-  }
-  .consent_popup {
-    width: 100%;
-    height: 16em;
-  }
   .consent_popup_content__title {
     font-size: 2.4em;
     margin-bottom: 0.1em;

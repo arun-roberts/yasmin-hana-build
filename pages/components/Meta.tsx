@@ -6,8 +6,8 @@ const Meta = ({title, keywords, description}: {title: string, keywords: string, 
         <Head>
           <title>{title}</title>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
-          {/* <meta name="keywords" content={keywords} />
-          <meta name='description' content={description} /> */}
+          <meta name="keywords" content={keywords} />
+          <meta name='description' content={description} />
           <meta charSet='utf-8' />
         </Head>
     )
@@ -15,7 +15,7 @@ const Meta = ({title, keywords, description}: {title: string, keywords: string, 
 
 Meta.defaultProps = {
     title: 'Yasmin Hana — a page for adults.',
-    keywords: '',
+    keywords: 'Melbourne escort, Escort, sex worker, fly me to you, girlfriend experience, erotic massage, companion, yasmin companion, yasmin hana companion, yasmin hana escort, yasmin escort, dominatrix, kink friendly escort, kinky services, queer escort, bisexual, pansexual, cross dressing, foot fetish, overnight, dinner date, disability, neurodivergent, Independent private escort',
     description: ''
 }
 

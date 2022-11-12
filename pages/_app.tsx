@@ -1,8 +1,10 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import Image from 'next/image'
 import Layout from './components/Layout'
 import React, { useEffect, useState } from 'react'
 import Meta from './components/Meta'
+import Y009 from '../public/assets/images/Y009.jpg'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [ consent, setConsent ] = useState(true)
@@ -38,6 +40,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Layout>
       {!consent && 
         <div className={fadeout ? 'consent consent___fadeout' : 'consent'}>
+            <figure className='consent_background'>
+                <Image 
+                    className='consent_background__image'
+                    src={Y009}
+                    sizes='100vw'
+                    fill
+                    alt='Yasmin'
+                />
+            </figure>
             <section className='consent_popup'>
                 <div className='consent_popup_content'>
                     <h2 className='consent_popup_content__title'>This is a page for adults.</h2>
