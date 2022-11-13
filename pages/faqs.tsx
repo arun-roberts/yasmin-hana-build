@@ -2,7 +2,7 @@ import styles from '../styles/pages/Faq.module.css'
 import Footer from './components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import Y002 from '../public/assets/desktop-sm/Y002.jpg'
+import Y002 from '../public/assets/images/Y002.jpg'
 
 const Faq = () => {
     return <>

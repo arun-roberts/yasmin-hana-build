@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Pleasure from './pleasure'
+import Pleasure from './components/Pleasure'
 import Footer from './components/Footer'
 import styles from '../styles/pages/Home.module.css'
-import Y001 from '../public/assets/desktop-sm/Y001.jpg'
-import Y003 from '../public/assets/desktop-sm/Y003.jpg'
-import Y004 from '../public/assets/desktop-sm/Y004.jpg'
+import Y001 from '../public/assets/images/Y001.jpg'
+import Y003 from '../public/assets/images/Y003.jpg'
+import Y004 from '../public/assets/images/Y004.jpg'
 
 const Home: NextPage = () => {
 
