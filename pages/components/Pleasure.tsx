@@ -1,6 +1,9 @@
+// Next.js imports
 import Image from 'next/image'
-import styles from '../../styles/components/Pleasure.module.css'
 import Link from 'next/link'
+// Style module import
+import styles from '../../styles/components/Pleasure.module.css'
+// Image imports
 import Y004 from '../../public/assets/images/Y004.jpg'
 import Y006 from '../../public/assets/images/Y006.jpg'
 import Y007 from '../../public/assets/images/Y007.jpg'

@@ -1,7 +1,10 @@
-import styles from '../styles/pages/Faq.module.css'
-import Footer from './components/Footer'
+// Next.js imports
 import Link from 'next/link'
 import Image from 'next/image'
+// Component imports
+import Footer from './components/Footer'
+// Styling imports
+import styles from '../styles/pages/Faq.module.css'
 import Y002 from '../public/assets/images/Y002.jpg'
 
 const Faq = () => {
