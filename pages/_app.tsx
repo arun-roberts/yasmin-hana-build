@@ -4,6 +4,9 @@ import Layout from './components/Layout'
 import React, { useEffect, useState } from 'react'
 import Meta from './components/Meta'
 import Consent from './components/Consent'
+import { Manrope } from '@next/font/google'
+
+const manrope = Manrope()
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [ consent, setConsent ] = useState(true)
@@ -33,6 +36,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   return (
     <>
+      <style jsx global>{`
+        html {
+          font-family: ${manrope.style.fontFamily};
+        }
+      `}</style>
       <Layout>
         <Meta />
         <Component {...pageProps} />
