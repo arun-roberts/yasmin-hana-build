@@ -21,12 +21,6 @@ a {
   margin: 0;
 }
 
-svg {
-  width: 2em;
-  height: 2em;
-  fill: #ffefe8;
-}
-
 header {
   position: absolute;
   width: 100%;
@@ -53,17 +47,20 @@ svg {
   height: 2em;
   fill: black;
   transition: fill 120ms ease;
+  scale: 1;
 }
-svg:hover {
+svg:active {
   fill: rgba(200, 30, 5, 0.8);
+  scale: 0.9;
 }
 
 .red-link {
   color: rgba(200, 30, 5, 0.8);
   transition: color 150ms ease;
+  scale: 1;
 }
-.red-link:hover {
-  color: black;
+.red-link:active {
+  scale: 0.9;
 }
 
 .little-space {
@@ -79,104 +76,12 @@ svg:hover {
   padding-bottom: 2em;
 }
 
-.consent {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: opacity 900ms ease-out;
-  z-index: 4000;
-}
-.consent_background {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-.consent_background__image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.consent_popup {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: rgba(255, 239, 232, 0.9019607843);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 4003;
-}
-.consent_popup_content {
-  text-align: center;
-}
-.consent_popup_content__title {
-  font-weight: 200;
-  font-size: 1.5em;
-  margin-bottom: 0.3em;
-}
-.consent_popup_content__exp {
-  margin-bottom: 4em;
-  font-weight: 200;
-}
-.consent_popup_content__button {
-  border: none;
-  background-color: transparent;
-  color: #d02f16;
-  text-transform: uppercase;
-  font-size: 1.8em;
-  font-weight: 200;
-  cursor: pointer;
-}
-.consent___fadeout {
-  opacity: 0;
-}
-
-@media screen and (min-width: 767px) {
-  .consent_popup_content__title {
-    font-size: 1.7em;
+@media (any-hover: hover) {
+  svg:hover {
+    fill: rgba(200, 30, 5, 0.8);
   }
-  .consent_popup_content__exp {
-    margin-bottom: 2em;
-  }
-  .consent_popup_content__button {
-    margin-bottom: 1.2em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .consent_popup_content__title {
-    font-size: 2.4em;
-    margin-bottom: 0.1em;
-  }
-  .consent_popup_content__exp {
-    font-size: 1.2em;
-    margin-bottom: 1.3em;
-  }
-  .consent_popup_content__button {
-    position: relative;
-    margin-bottom: 0.8em;
-  }
-  .consent_popup_content__button::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 0.07em;
-    scale: 0 1;
-    background-color: rgba(200, 30, 5, 0.8);
-    transition: all 250ms ease;
-  }
-  .consent_popup_content__button:hover:after {
-    scale: 1 1;
+  .red-link:hover {
+    color: black;
   }
 }
 @media screen and (min-width: 1800px) {

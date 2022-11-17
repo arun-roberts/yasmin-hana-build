@@ -1,8 +1,11 @@
+// Next.js imports
 import Link from "next/link"
 import Image from "next/image"
+// Component imports
 import Footer from "./components/Footer"
+// Styling imports
 import styles from '../styles/pages/Touch.module.css'
-import Y005 from '../public/assets/desktop-sm/Y005.jpg'
+import Y005 from '../public/assets/images/Y005.jpg'
 
 const Touch = () => {
     return <>

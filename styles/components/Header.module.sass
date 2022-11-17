@@ -14,8 +14,11 @@
     &__title
         position: relative
         font-size: 1.5em
-        color: black
+        color: $that-red-one
         font-weight: 300
+
+        &:active
+            color: black
 
     &__nav
         position: block
@@ -27,6 +30,10 @@
 
     &_mobileOnly
         display: none
+
+@media (hover-any: hover)
+    .header__title:hover
+        color: $that-red-one
 
 @media screen and ( min-width: $desktop-sm )
     
@@ -45,6 +52,11 @@
             position: relative
             font-size: 1.5em
             color: black
+            transition: color 150ms ease
+            scale: 1
+
+            &:active
+                scale: 0.9
 
         &__nav
             position: block
@@ -71,11 +83,6 @@
         &__title
             position: relative
             font-size: 1.5em
-            color: black
-            transition: color 150ms ease
-
-            &:hover
-                color: $that-red-one
 
         &__nav
             position: absolute

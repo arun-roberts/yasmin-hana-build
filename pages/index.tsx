@@ -1,7 +1,10 @@
+// Next.js imports
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Pleasure from './pleasure'
+// Component imports
+import Pleasure from './components/Pleasure'
 import Footer from './components/Footer'
+// Styling imports
 import styles from '../styles/pages/Home.module.css'
 import Y001 from '../public/assets/images/Y001.jpg'
 import Y003 from '../public/assets/images/Y003.jpg'

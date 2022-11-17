@@ -1,63 +1,60 @@
-import '../styles/globals.css'
+// Next.js imports
 import type { AppProps } from 'next/app'
-import Image from 'next/image'
-import Layout from './components/Layout'
+// React imports
 import React, { useEffect, useState } from 'react'
+// Component imports
+import Layout from './components/Layout'
 import Meta from './components/Meta'
-import Y009 from '../public/assets/images/Y009.jpg'
+import Consent from './components/Consent'
+// Style imports
+import { Manrope } from '@next/font/google'
+import '../styles/globals.css'
+
+// Initialise manrope font
+const manrope = Manrope()
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [ consent, setConsent ] = useState(true)
-    const [ fadeout, setFadeout ] = useState(false)
-    const [ clicked, setClicked ] = useState(false)
+  const [ fadeout, setFadeout ] = useState(false)
+  const [ clicked, setClicked ] = useState(false)
 
-    useEffect(() => {
-        const askForIt = localStorage.getItem('consent')
-        console.log(askForIt)
-        if (askForIt === null) {
-            if (clicked) {
-                localStorage.setItem('consent', JSON.stringify(true)) 
-                setConsent(true)
-                document.body.classList.remove('stop-scrolling')
-            } else {
-                setConsent(false)
-                document.body.classList.add('stop-scrolling')
-            }
-        }
-    }, [clicked])
+  // Checks local storage for existence of consent boolean. 
+  // Displays popup if unavailable. Displays page if consent === true.
+  useEffect(() => {
+      const askForIt = localStorage.getItem('consent')
+      console.log(askForIt)
+      if (askForIt === null) {
+          if (clicked) {
+              localStorage.setItem('consent', JSON.stringify(true)) 
+              setConsent(true)
+              document.body.classList.remove('stop-scrolling')
+          } else {
+              setConsent(false)
+              document.body.classList.add('stop-scrolling')
+          }
+      }
+  }, [clicked])
 
-    const getClicked = () => {
-        setFadeout(true)
-        setTimeout(() => {
-            setClicked(true)
-        }, 920)
-    }
+  // Fades out popup
+  const getClicked = () => {
+      setFadeout(true)
+      setTimeout(() => {
+          setClicked(true)
+      }, 920)
+  }
   return (
     <>
-        <Layout>
-          <Meta />
-          <Component {...pageProps} />
-        </Layout>
-      {!consent && 
-        <div className={fadeout ? 'consent consent___fadeout' : 'consent'}>
-            <figure className='consent_background'>
-                <Image 
-                    className='consent_background__image'
-                    src={Y009}
-                    sizes='100vw'
-                    fill
-                    alt='Yasmin'
-                />
-            </figure>
-            <section className='consent_popup'>
-                <div className='consent_popup_content'>
-                    <h2 className='consent_popup_content__title'>This is a page for adults.</h2>
-                    <p className='consent_popup_content__exp'>You must be over the age of 18 to enter.</p>
-                    <button className='consent_popup_content__button' onClick={getClicked}>I understand</button>
-                </div>
-            </section>
-        </div>
-      }
+      <style jsx global>{`
+        html {
+          font-family: ${manrope.style.fontFamily};
+        }
+      `}</style>
+      <Layout>
+        <Meta />
+        <Component {...pageProps} />
+      </Layout>
+      {/* Popup asking users to confirm their age */}
+      {!consent && <Consent fadeout={fadeout} getClicked={getClicked} />}
     </>
   )
 }

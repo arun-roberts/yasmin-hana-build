@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/components/Header.module.css'
 
@@ -6,9 +7,9 @@ const Header = () => {
     const [ dropDown, setDropDown ] = useState(false)
     return (
         <header className={styles.header}>
-            <h2 className={styles.header__title}>
+            <Link href='/' className={styles.header__title}>
                 YASMIN HANA
-            </h2>
+            </Link>
             <div 
                 className={dropDown ? `${styles.header__nav} ${styles.header__nav___open}` : `${styles.header__nav}`}
                 onClick={() => setDropDown(false)} 
