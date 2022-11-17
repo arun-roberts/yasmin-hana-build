@@ -27,13 +27,13 @@ const Touch = () => {
                 <ul className={styles.touch_text_links}>
                     <li className={styles.touch_text_links__link}>
                         Email: 
-                        <Link href='mailto:Yasmin.Hana@protonmail.com'>
+                        <Link className='little-space' href='mailto:Yasmin.Hana@protonmail.com'>
                              yasmin.hana@protonmail.com
                         </Link>
                     </li>
                     <li className={styles.touch_text_links__link}>
                         Phone: 
-                        <Link href='sms://61457894685;'>
+                        <Link className='little-space' href='sms://61457894685;'>
                              +61 457 894 685 (text only)
                         </Link>
                     </li>
@@ -52,7 +52,12 @@ const Touch = () => {
                     </ul>
                 </div>
                 <div className={styles.touch_text_example}>
-                    <h3 className={styles.touch_text_example__instruct}>Alternatively, please feel free to use the following template:</h3>
+                    <h3 className={styles.touch_text_example__instruct}>
+                        Alternatively, please feel free to <Link
+                        href='sms://61457894685;?&body=Hi%20Yasmin,%20My%20name%20is%20*your%20name*,%20I’m%20located%20at%20*your%20location*.%20I%20would%20like%20to%20organise%20a%20*kind%20of%20service%20and%20duration*%20session%20with%20you%20on%20*preferred%20date*%20at%20*preferred%20time*.%20*Any%20details/%20specific%20requests/%20interests%20/%20kinks%20/%20questions*.'
+                        className={styles.touch_text_example__link}>
+                        send me a message using the following template
+                    </Link>:</h3>
                     <ul className={styles.touch_text_example_list}>
                         <li className={styles.touch_text_example_list__item}>
                             Hi Yasmin, 
@@ -67,11 +72,6 @@ const Touch = () => {
                             <span>Any details / specific requests / interests / kinks / questions</span>
                         </li>
                     </ul>    
-                    <Link
-                        href='sms://61457894685;?&body=Hi%20Yasmin,%20My%20name%20is%20*your%20name*,%20I’m%20located%20at%20*your%20location*.%20I%20would%20like%20to%20organise%20a%20*kind%20of%20service%20and%20duration*%20session%20with%20you%20on%20*preferred%20date*%20at%20*preferred%20time*.%20*Any%20details/%20specific%20requests/%20interests%20/%20kinks%20/%20questions*.'
-                        className={styles.touch_text_example__link}>
-                        Send me a text using this template.
-                    </Link>
                 </div>
             </section>
         </main>
