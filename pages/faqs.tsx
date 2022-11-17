@@ -64,7 +64,7 @@ const Faq = () => {
                             I would love to see you, but I’m a little unsure which service to choose.
                         </h2>
                         <p className={styles.faq_body_faqs_item__a}>
-                            I’m super excited that you’d like to spend time with me, but you don’t have to know what you’re looking for. If you have read my <Link className='red-link' href='/#pleasure-menu'>Pleasure Menu</Link> and still don’t quite know what you’d like, <Link className='red-link' href='/touch'>get in touch</Link> and we can discuss options together. We can always go with the flow and work it out during our time together.
+                            I’m super excited that you’d like to spend time with me, but you don’t have to know what you’re looking for. If you have read my <Link className='red-link' href='/#pleasure-menu'>Pleasure Menu</Link> and still don’t quite know what you’d like, <Link className='red-link' href='/touch#touch'>get in touch</Link> and we can discuss options together. We can always go with the flow and work it out during our time together.
                         </p>
                     </li>
                     <li 

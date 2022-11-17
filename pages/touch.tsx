@@ -20,7 +20,7 @@ const Touch = () => {
                 />
             </figure>
             <section className={styles.touch_text}>
-                <h1 className={styles.touch_text__title}>Get in touch</h1>
+                <h1 id='touch' className={styles.touch_text__title}>Get in touch</h1>
                 <h2 className={styles.touch_text__subtitle}>
                     Whether you already know what you’re looking for or you still have some questions, you can email or text me and we’ll take it from there.
                 </h2>
@@ -60,7 +60,7 @@ const Touch = () => {
                         href='sms://61457894685;?&body=Hi%20Yasmin,%20My%20name%20is%20*your%20name*,%20I’m%20located%20at%20*your%20location*.%20I%20would%20like%20to%20organise%20a%20*kind%20of%20service%20and%20duration*%20session%20with%20you%20on%20*preferred%20date*%20at%20*preferred%20time*.%20*Any%20details/%20specific%20requests/%20interests%20/%20kinks%20/%20questions*.'
                         className={styles.touch_text_example__link}>
                         send me a message using the following template
-                    </Link>:</h3>
+                    </Link> :</h3>
                     <ul className={styles.touch_text_example_list}>
                         <li className={styles.touch_text_example_list__item}>
                             Hi Yasmin, 

@@ -12,8 +12,11 @@
 .header__title {
   position: relative;
   font-size: 1.5em;
-  color: black;
+  color: rgba(200, 30, 5, 0.8);
   font-weight: 300;
+}
+.header__title:active {
+  color: black;
 }
 .header__nav {
   position: block;
@@ -27,6 +30,11 @@
   display: none;
 }
 
+@media (hover-any: hover) {
+  .header__title:hover {
+    color: rgba(200, 30, 5, 0.8);
+  }
+}
 @media screen and (min-width: 1200px) {
   .header {
     position: fixed;
@@ -43,6 +51,7 @@
     position: relative;
     font-size: 1.5em;
     color: black;
+    transition: color 150ms ease;
   }
   .header__nav {
     position: block;
@@ -69,11 +78,6 @@
   .header__title {
     position: relative;
     font-size: 1.5em;
-    color: black;
-    transition: color 150ms ease;
-  }
-  .header__title:hover {
-    color: rgba(200, 30, 5, 0.8);
   }
   .header__nav {
     position: absolute;

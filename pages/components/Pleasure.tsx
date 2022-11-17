@@ -79,7 +79,7 @@ const Pleasure = () => {
                         <dd className={styles.pleasure_item_text_priceList__price}>$2400</dd>
                     </dl>
                     <p className={styles.pleasure_item_text__body}>
-                        The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. <Link className='red-link' href='/touch'>Get in touch</Link> and based on our mutual interests, together we’ll work out the perfect date.
+                        The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. <Link className='red-link' href='/touch#touch'>Get in touch</Link> and based on our mutual interests, together we’ll work out the perfect date.
                     </p>
                 </div>
             </section>
