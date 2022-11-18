@@ -8,9 +8,22 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
-  overflow: hidden;
   transition: opacity 900ms ease-out;
   z-index: 4000;
+}
+.consent_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.consent_image__itself {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+  width: 100%;
+  height: 100%;
 }
 .consent_popup {
   width: 20em;
@@ -19,6 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 4001;
 }
 .consent_popup_content {
   text-align: center;
@@ -46,9 +60,6 @@
 }
 
 @media screen and (min-width: 767px) {
-  .consent {
-    background-image: url("/assets/tablet/Y009.jpg");
-  }
   .consent_popup {
     width: 100%;
     height: 12em;
@@ -64,9 +75,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .consent {
-    background-image: url("/assets/desktop-sm/Y009.jpg");
-  }
   .consent_popup {
     width: 100%;
     height: 16em;

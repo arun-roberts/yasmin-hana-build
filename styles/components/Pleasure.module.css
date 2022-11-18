@@ -86,63 +86,23 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .pleasure {
-    width: 100%;
-    display: grid;
-    gap: 1em;
-    margin: 0 auto;
-  }
   .pleasure_item {
     min-height: 30em;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  .pleasure_item:nth-of-type(2n) {
-    flex-direction: row;
-  }
-  .pleasure_item:nth-last-of-type(2n) * {
-    text-align: right;
-  }
-  .pleasure_item:nth-of-type(2n) div {
-    align-items: flex-end;
   }
   .pleasure_item:nth-of-type(4) {
     height: 36em;
   }
   .pleasure_item_image {
-    position: relative;
     width: 49%;
-    height: 100%;
     min-height: 30em;
   }
   .pleasure_item_text {
     width: 49%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #ffefe8;
   }
   .pleasure_item_text:nth-of-type(2n) {
     padding: 0.8em;
   }
-  .pleasure_item_text__title {
-    margin-bottom: 0.8rem;
-  }
-  .pleasure_item_text_priceList {
-    margin-bottom: 0.8rem;
-  }
   .pleasure_item_text__body {
     width: 80%;
-    margin-bottom: 0.8rem;
-  }
-  .pleasure_aside {
-    display: grid;
-    gap: 0.8em;
-    margin-top: 1.5em;
-  }
-  .pleasure_aside__item {
-    font-weight: 200;
-    font-style: italic;
   }
 }/*# sourceMappingURL=Pleasure.module.css.map */
