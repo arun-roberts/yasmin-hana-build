@@ -11,7 +11,7 @@ import { Manrope } from '@next/font/google'
 import '../styles/globals.css'
 
 // Initialise manrope font
-const manrope = Manrope()
+const manrope = Manrope({ subsets: ['latin'] })
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [ consent, setConsent ] = useState(true)

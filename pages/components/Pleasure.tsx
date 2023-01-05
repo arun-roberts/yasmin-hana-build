@@ -27,7 +27,7 @@ const Pleasure = () => {
                 </figure>
                 <div className={styles.pleasure_item_text}>
                     <h2 className={styles.pleasure_item_text__title}>The Social</h2>
-                    <p className={styles.pleasure_item_text_priceList}>$300 p/h</p>
+                    <p className={styles.pleasure_item_text_priceList}>$250 p/h</p>
                     <p className={styles.pleasure_item_text__body}>
                         Let’s get to know each other over lunch or dinner, at one of my favourite spots in Melbourne. What I love about these meet ups is the sensual and intellectual connection it creates, nothing excites me more than learning about you and your passions. 
                     </p>
@@ -53,7 +53,7 @@ const Pleasure = () => {
                         <dt className={styles.pleasure_item_text_priceList__time}>2 hours</dt>
                         <dd className={styles.pleasure_item_text_priceList__price}>$1000</dd>
                         <dt className={styles.pleasure_item_text_priceList__time}>3 hours</dt>
-                        <dd className={styles.pleasure_item_text_priceList__price}>$1500</dd>
+                        <dd className={styles.pleasure_item_text_priceList__price}>$1300</dd>
                     </dl>
                     <p className={styles.pleasure_item_text__body}>
                         Time spent together at my incall location or at a 4-5 star hotel in the CBD and inner suburbs. Short but sweet, tell me your desires and let’s make the magic happen.
@@ -74,9 +74,9 @@ const Pleasure = () => {
                     <h2 className={styles.pleasure_item_text__title}>The Decadent</h2>
                     <dl className={styles.pleasure_item_text_priceList}>
                         <dt className={styles.pleasure_item_text_priceList__time}>4 hours</dt>
-                        <dd className={styles.pleasure_item_text_priceList__price}>$1800</dd>
+                        <dd className={styles.pleasure_item_text_priceList__price}>$1600</dd>
                         <dt className={styles.pleasure_item_text_priceList__time}>6 hours</dt>
-                        <dd className={styles.pleasure_item_text_priceList__price}>$2400</dd>
+                        <dd className={styles.pleasure_item_text_priceList__price}>$2000</dd>
                     </dl>
                     <p className={styles.pleasure_item_text__body}>
                         The time we will spend together will be equally split between being social and salacious. I love planning dates and always have a few ideas in mind. <Link className='red-link' href='/touch#touch'>Get in touch</Link> and based on our mutual interests, together we’ll work out the perfect date.
@@ -97,9 +97,9 @@ const Pleasure = () => {
                     <h2 className={styles.pleasure_item_text__title}>The Foodie</h2>
                     <dl className={styles.pleasure_item_text_priceList}>
                         <dt className={styles.pleasure_item_text_priceList__time}>4 hours</dt>
-                        <dd className={styles.pleasure_item_text_priceList__price}>$2300</dd>
+                        <dd className={styles.pleasure_item_text_priceList__price}>$2200</dd>
                         <dt className={styles.pleasure_item_text_priceList__time}>6 hours</dt>
-                        <dd className={styles.pleasure_item_text_priceList__price}>$2700</dd>
+                        <dd className={styles.pleasure_item_text_priceList__price}>$2500</dd>
                     </dl>
                     <p className={styles.pleasure_item_text__body}>
                         Cooking and sharing a home cooked meal are two of the greatest pleasures in life. For  half of our session, I’ll be in the kitchen whipping up a meal for the two of us to enjoy while you sit back, relax and sip on a glass of whiskey. Or perhaps you’d like to join me in the kitchen?
@@ -129,7 +129,7 @@ const Pleasure = () => {
                             15 hours with a minimum of 7 hours of sleep
                         </dd>
                         <dt className={styles.pleasure_item_text_priceList__price}>
-                            $3800
+                            $3500
                         </dt>
                     </dl>
                     <p className={styles.pleasure_item_text__body}>
