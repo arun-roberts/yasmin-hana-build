@@ -44,7 +44,7 @@ const Faq = () => {
                             Enthusiastic consent is not just an important part of every one of my sessions, but something I find especially sexy. Specifically with kink, this means that we will speak about boundaries and expectations prior to a session. These chats are a great way to get us both in the mood and excited for our adventures together. It’s also important to remember that consent is ongoing, and can be given and revoked at any time. So I’ll be checking in with you throughout our session.
                         </p>
                         <p className={styles.faq_body_faqs_item__a}>
-                            I get regular STI checks every 3 months and expect that you would have also recently been tested before seeing me. I also hold my clients to a high standard of personal hygiene and would expect that you have showered immediately prior to our session.
+                            I get regular STI checks and expect that you would have also recently been tested before seeing me. I also hold my clients to a high standard of personal hygiene and would expect that you have showered immediately prior to our session.
                         </p>
                     </li>
                     <li 
